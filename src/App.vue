@@ -1,6 +1,13 @@
 <template>
-  <HeaderMenu />
-  <HomePage />
+  <div>
+    <div>
+      <HeaderMenu />
+    </div>
+    <div>
+      <HomePage class="mt-20"/>
+    </div>
+  </div>
+
 </template>
 
 <script>
