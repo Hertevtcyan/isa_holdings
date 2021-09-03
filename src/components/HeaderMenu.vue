@@ -21,7 +21,7 @@
                     <router-link to="/about/history" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">History</router-link>
                     <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Strategy</a>
                     <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Vision and Values</a>
-                    <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Managment Apoarch</a>
+                    <router-link to="/about/managment" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Managment Apoarch</router-link>
                   </div>
                 </div>
             </div>

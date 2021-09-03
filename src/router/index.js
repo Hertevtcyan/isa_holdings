@@ -13,6 +13,11 @@ const routes = [
     name: "History",
     component: () => import('../view/AboutHistory'),
   },
+  {
+    path: "/about/managment",
+    name: "Managmant",
+    component: () => import('../view/Managment')
+  }
 ];
 
 const router = createRouter({

@@ -1,20 +1,6 @@
 <template>
   <div>
-    <div class="blue-history flex items-center">
-      <div class="card-history container mx-auto px-4">
-        <div class="active-history">
-          <div class="history-text flex">
-            <p>About Us</p>
-            <img
-              src="@/assets/about/aboutHistory/pathHistory.png"
-              class="history-icon"
-              alt=""
-            />
-            <p>Our History</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <ShowPathPage :page="{path:'About Us',section:'Our History'}"/>
     <div class="about-container ">
       <div class="shadow-block flex items-center">
         <div class="container mx-auto px-4">
@@ -33,7 +19,12 @@
 </template>
 
 <script>
-export default {};
+import ShowPathPage from '@/components/ui/ShowPathPage.vue'
+export default {
+  components: { 
+    ShowPathPage
+  }
+};
 </script>
 
 
@@ -63,23 +54,23 @@ p {
   height: 720px;
   }
 }
-.blue-history {
-  background: #10223d;
-  width: 100%;
-  height: 41px;
+// .blue-history {
+//   background: #10223d;
+//   width: 100%;
+//   height: 41px;
 
-  p {
-    font-family: Rubik;
-    font-size: 18px;
-    color: $colorText;
-    margin-right: 11px;
-  }
-  img {
-    padding-right: 11px;
-    //   widows: 13px;
-    //   height: 13px;
-  }
-}
+//   p {
+//     font-family: Rubik;
+//     font-size: 18px;
+//     color: $colorText;
+//     margin-right: 11px;
+//   }
+//   img {
+//     padding-right: 11px;
+//     //   widows: 13px;
+//     //   height: 13px;
+//   }
+// }
 .path-history {
   border: 13px solid transparent;
   border-left: 13px solid #c1121f;

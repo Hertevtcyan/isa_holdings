@@ -10,6 +10,7 @@
       </div>
     </div>
     <Toward/>
+    <CorporateSocial/>
   </div>
 </template>
 
@@ -18,12 +19,14 @@ import aboutFirstPhoto from "./AboutHistoryModule/AboutHistoryMainPhoto.vue";
 import ItAllStartedWithADream from "./AboutHistoryModule/ItAllStartedWithADream.vue";
 import AlwaysUpstream from "./AboutHistoryModule/AlwaysUpstream.vue";
 import Toward from "./AboutHistoryModule/Towards.vue"
+import CorporateSocial from "./AboutHistoryModule/CorporateSocial.vue"
 export default {
   components: {
     aboutFirstPhoto,
     ItAllStartedWithADream,
     AlwaysUpstream,
-    Toward
+    Toward,
+    CorporateSocial
   },
 };
 </script>

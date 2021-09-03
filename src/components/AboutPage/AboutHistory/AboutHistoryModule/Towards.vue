@@ -24,6 +24,7 @@
 <style scoped lang="scss">
 .container-bg {
   background: #e5e5e5;
+  padding-bottom: 136px;
 }
 .towards-text {
 padding-left: 70px;

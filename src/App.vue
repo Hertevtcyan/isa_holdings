@@ -4,7 +4,6 @@
     <router-view />
     <Footer class="mt-20"/>
   </div>
-
 </template>
 
 <script>
