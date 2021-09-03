@@ -1,21 +1,28 @@
 <template>
   <HeaderMenu />
- <router-view />
+  <div id="app">
+    <router-view />
+    <Footer class="mt-20"/>
+  </div>
+
 </template>
 
 <script>
 import HeaderMenu from './components/HeaderMenu.vue'
-// import HomePage from "./view/HomePage";
+import Footer from "./components/Footer";
 
 export default {
   name: 'App',
   components: {
-    // HomePage,
+    Footer,
     HeaderMenu
   }
 }
 </script>
 
-<style>
+<style scoped>
+#app{
+  background: #FFFFFF;
+}
 
 </style>
