@@ -1,7 +1,6 @@
 <template>
-    <div>
-        
-        <AboutHistory/>
+    <div> 
+        <AboutHistory />
     </div>
 </template>
 

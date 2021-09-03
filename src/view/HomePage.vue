@@ -1,5 +1,6 @@
 <template>
   <ImgBlock />
+  <router-view />
 </template>
 
 <script>
