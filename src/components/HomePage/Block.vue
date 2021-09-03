@@ -1,11 +1,11 @@
 <template>
     <div class="flex w-full">
         <div class="w-2/4">
-            <CartOne class="-mt-24 ml-52"/>
-            <CartTwo class="mt-24 ml-52"/>
+            <CartOne class="-mt-24 ml-52" data-aos="fade-right"/>
+            <CartTwo class="mt-24 ml-52" data-aos="fade-right"/>
         </div>
         <div class="w-2/4">
-            <CartThree class="mt-14 ml-14"/>
+            <CartThree class="mt-14 ml-14" data-aos="fade-left"/>
         </div>
     </div>
 </template>

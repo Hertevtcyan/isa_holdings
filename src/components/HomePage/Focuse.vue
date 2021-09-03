@@ -1,6 +1,6 @@
 <template>
   <div class="w-full focus">
-    <div class="rounded overflow-hidden shadow-lg card">
+    <div class="rounded overflow-hidden shadow-lg card" data-aos="fade-right">
       <h1 class="ml-16 mt-20">Focuse on Stregth</h1>
       <p class="ml-16 mt-4">Our seasoned team of specialists is<br>
         dedicated to helping our clients — both ,<br>

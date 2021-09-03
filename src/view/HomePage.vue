@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <ImgBlock class="imgBlock"/>
   <Block class="block"/>
   <Focuse class="mt-24"/>
@@ -6,6 +7,18 @@
   <Images class="mt-40"/>
   <BottomLine class="mt-24 mx-auto" />
   <Partner class="mt-24 mx-auto"/>
+=======
+  <div>
+    <ImgBlock class="imgBlock"/>
+    <Block class="block"/>
+    <Focuse class="mt-24"/>
+    <MobileManager class="mt-40"/>
+    <Images class="mt-40"/>
+    <BottomLine class="mt-24 mx-auto" />
+    <Partner class="mt-24 mx-auto"/>
+  </div>
+
+>>>>>>> d24c2d04f60a2128641bbeba9bd184274e8eb6b6
 </template>
 
 <script>
@@ -32,14 +45,16 @@ export default {
 
 <style scoped>
 
+
 .imgBlock{
   position: fixed;
-  z-index: -1;
+  z-index: -99999;
 }
 
 .block{
   margin-top: 730px;
   background: #FFFFFF;
 }
+
 
 </style>
