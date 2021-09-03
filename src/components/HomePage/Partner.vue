@@ -1,12 +1,12 @@
 <template>
   <div class="flex w-4/5 partner">
     <div class="partner_img">
-        <img src="../../assets/icons/isco.svg">
-        <img src="../../assets/icons/isa.svg">
-        <img src="../../assets/icons/isa_groupe.svg">
-        <img src="../../assets/icons/mixtat.svg">
-        <img src="../../assets/icons/investmant.svg">
-        <img src="../../assets/icons/dat.svg">
+        <img src="../../assets/icons/isco.svg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="../../assets/icons/isa.svg" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="../../assets/icons/isa_groupe.svg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="../../assets/icons/mixtat.svg" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="../../assets/icons/investmant.svg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img src="../../assets/icons/dat.svg" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
     </div>
     <div class="partner_text">
       <h1 class="mt-16 ml-24">Focuse on Stregth</h1>

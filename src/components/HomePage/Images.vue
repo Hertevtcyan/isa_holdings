@@ -1,12 +1,12 @@
 <template>
   <div class="w-full images">
-    <div class="2/6 one">
+    <div class="2/6 one" data-aos="zoom-in">
       <h1>Our History</h1>
     </div>
-    <div class="2/6 two">
+    <div class="2/6 two" data-aos="zoom-in">
       <h1>Mission & Values</h1>
     </div>
-    <div class="2/6 three">
+    <div class="2/6 three" data-aos="zoom-in">
       <h1>Strategy</h1>
     </div>
   </div>

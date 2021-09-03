@@ -1,16 +1,14 @@
 <template>
-<<<<<<< HEAD
-  <ImgBlock />
-  <router-view />
-=======
-  <ImgBlock class="imgBlock"/>
-  <Block class="block"/>
-  <Focuse class="mt-24"/>
-  <MobileManager class="mt-40"/>
-  <Images class="mt-40"/>
-  <BottomLine class="mt-24 mx-auto" />
-  <Partner class="mt-24 mx-auto"/>
->>>>>>> d7111416f0bf216a5487ea0e8a52178abe28158b
+  <div>
+    <ImgBlock class="imgBlock"/>
+    <Block class="block"/>
+    <Focuse class="mt-24"/>
+    <MobileManager class="mt-40"/>
+    <Images class="mt-40"/>
+    <BottomLine class="mt-24 mx-auto" />
+    <Partner class="mt-24 mx-auto"/>
+  </div>
+
 </template>
 
 <script>
@@ -37,14 +35,16 @@ export default {
 
 <style scoped>
 
+
 .imgBlock{
   position: fixed;
-  z-index: -1;
+  z-index: -99999;
 }
 
 .block{
   margin-top: 730px;
   background: #FFFFFF;
 }
+
 
 </style>

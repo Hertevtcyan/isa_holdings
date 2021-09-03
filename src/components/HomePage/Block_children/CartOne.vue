@@ -1,7 +1,7 @@
 <template>
   <div class="rounded overflow-hidden shadow-lg card">
     <div class="card_img_div">
-      <img class="w-full video" src="../../../assets/icons/video.svg">
+      <img class="w-full video" src="../../../assets/icons/video.png">
       <h1>Focuse on stregth</h1>
       <img src="../../../assets/icons/youtube.svg" class="youtube">
     </div>
