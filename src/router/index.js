@@ -11,7 +11,7 @@ const routes = [
   {
     path: "/about/history",
     name: "History",
-    component: () => import('../view/AboutHistory'),
+    component: () => import('../view/About'),
   },
   {
     path: "/about/managment",

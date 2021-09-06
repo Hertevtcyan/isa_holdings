@@ -26,6 +26,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$colorText: #ffffff;
+.blue-history {
+  background: #10223d;
+  width: 100%;
+  height: 41px;
+
+  p {
+    font-family: Rubik;
+    font-size: 18px;
+    color: $colorText;
+    margin-right: 11px;
+  }
+  img {
+    padding-right: 11px;
+    //   widows: 13px;
+    //   height: 13px;
+  }
+}
 
 </style>

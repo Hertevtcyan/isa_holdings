@@ -1,6 +1,8 @@
 <template>
   <div>
+    <ShowPathPage :page="{path:'About Us',section:'Our History'}"/>
     <aboutFirstPhoto />
+    
     <div class="container-bg">
       <div class="container mx-auto px-4">
         <div class="flex justify-between ">
@@ -20,19 +22,22 @@ import ItAllStartedWithADream from "./AboutHistoryModule/ItAllStartedWithADream.
 import AlwaysUpstream from "./AboutHistoryModule/AlwaysUpstream.vue";
 import Toward from "./AboutHistoryModule/Towards.vue"
 import CorporateSocial from "./AboutHistoryModule/CorporateSocial.vue"
+import ShowPathPage from '@/components/ui/ShowPathPage.vue'
 export default {
   components: {
     aboutFirstPhoto,
     ItAllStartedWithADream,
     AlwaysUpstream,
     Toward,
-    CorporateSocial
+    CorporateSocial,
+    ShowPathPage
   },
 };
 </script>
 
 
 <style scoped lang="scss">
+
 .container-bg {
   background: #e5e5e5;
 }

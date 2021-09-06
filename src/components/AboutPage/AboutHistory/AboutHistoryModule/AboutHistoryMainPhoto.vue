@@ -1,6 +1,5 @@
 <template>
   <div>
-    <ShowPathPage :page="{path:'About Us',section:'Our History'}"/>
     <div class="about-container ">
       <div class="shadow-block flex items-center">
         <div class="container mx-auto px-4">
@@ -35,9 +34,6 @@ p {
 }
 .about-container {
   background-image: url("../../../../assets/about/aboutHistory/ddd.png");
-  //   background: linear-gradient(278.22deg, rgba(229, 252, 255, 0) -6.14%, #000000 97.78%);
-  //   mix-blend-mode: multiply;
-  //   opacity: 0.55;
   width: 100%;
   height: 720px;
   background-repeat: no-repeat;
@@ -54,23 +50,23 @@ p {
   height: 720px;
   }
 }
-// .blue-history {
-//   background: #10223d;
-//   width: 100%;
-//   height: 41px;
+.blue-history {
+  background: #10223d;
+  width: 100%;
+  height: 41px;
 
-//   p {
-//     font-family: Rubik;
-//     font-size: 18px;
-//     color: $colorText;
-//     margin-right: 11px;
-//   }
-//   img {
-//     padding-right: 11px;
-//     //   widows: 13px;
-//     //   height: 13px;
-//   }
-// }
+  p {
+    font-family: Rubik;
+    font-size: 18px;
+    color: $colorText;
+    margin-right: 11px;
+  }
+  img {
+    padding-right: 11px;
+    //   widows: 13px;
+    //   height: 13px;
+  }
+}
 .path-history {
   border: 13px solid transparent;
   border-left: 13px solid #c1121f;

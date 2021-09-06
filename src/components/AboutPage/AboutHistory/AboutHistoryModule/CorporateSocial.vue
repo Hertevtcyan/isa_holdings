@@ -14,8 +14,7 @@
             the quality of life of our society, customers, partners, and
             employees
           </p>
-          <!-- <button class="view">View More</button> -->
-          <read-more-button type="transparentView"  class="view">View More</read-more-button>
+          <read-more-button type="transparent"  class="view">View More</read-more-button>
         </div>
       </div>
     
@@ -40,6 +39,8 @@ ReadMoreButton
   width: 100%;
   height: 100vh;
   padding-top: 65px;
+  background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .corporate-text-wrapper {
