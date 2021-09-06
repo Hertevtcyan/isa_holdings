@@ -15,28 +15,15 @@
                alt: 'sdfsdfsdsdf',
                }" />
     </div>
-
-    <!-- <div class="help-busines">
-      <img src="@/assets/about/aboutManagment/helpingBusines.png" alt="" />
-      <div class="help-busines-text-butt">
-        <h2>Helping a space business reach for the stars</h2>
-        <p>
-          We’ve financed a space electronics inventor to bring satellite
-          technology to market.
-        </p>
-         <read-more-button type="text"  class="view">View More</read-more-button>
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
 import PhotoSubTitleParagraphButt from '@/components/ui/PhotoSubTitleParagraphButt.vue'
-// import ReadMoreButton from '@/components/ui/ReadMoreButton.vue'
+
 export default {
     components: {
       PhotoSubTitleParagraphButt
-      // ReadMoreButton
     }
 }
 </script>
