@@ -1,13 +1,10 @@
 <template>
     <div class="help-busines">
-      <!-- <img :src="{photo}" alt="" /> -->
-      <base-image v-bind="$props.image" />
+      <base-image v-if="showPhoto" v-bind="$props.image" />
       <div class="help-busines-text-butt">
         <h2>{{$props.subTitle}}</h2>
-        <p>
-          
-        </p>
-         <read-more-button type="text"  class="view">View More</read-more-button>
+        <p>{{$props.paragraph}}</p>
+         <read-more-button type="text" v-if="$props.showButton"  class="view">View More</read-more-button>
       </div>
     </div>
 </template>
@@ -25,10 +22,22 @@ export default {
             type: String,
             required: true
         },
+        paragraph: {
+            type: String,
+            required: true
+        },
         image: {
             type: Object,
             required: true,
             validator: (img) => 'src' in img && 'alt' in img
+        },
+        showButton: {
+          type: Boolean,
+          required: true
+        },
+        showPhoto: {
+          type: Boolean,
+          required: true
         }
     }
 }

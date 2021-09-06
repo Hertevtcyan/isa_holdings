@@ -1,5 +1,5 @@
 <template>
-  <img :src="required(`@/assets/${$props.src}`)" :alt="$props.alt">
+  <img :src="require(`@/assets/${$props.src}`)" :alt="$props.alt">
 </template>
 
 <script>
