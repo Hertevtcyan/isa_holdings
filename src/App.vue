@@ -29,7 +29,7 @@ export default {
 
 
 #app{
-  background: #FFFFFF;
+  background: white;
 }
 
 </style>
