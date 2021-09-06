@@ -5,7 +5,15 @@
       <div class="risk">Pass through</div>
     </div>
     <div>
-             <PhotoSubTitleParagraphButt sub-title="sdfsdfsdsdf" :image="{src: 'about/aboutManagment/helpingBusines.png', alt: 'sdfsdfsdsdf' }" />
+             <PhotoSubTitleParagraphButt
+              sub-title="Helping a space business reach for the stars"
+              paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
+              :showButton="true"
+              :showPhoto="true"
+              :image="{
+                src: 'about/aboutManagment/helpingBusines.png',
+               alt: 'sdfsdfsdsdf',
+               }" />
     </div>
 
     <!-- <div class="help-busines">
