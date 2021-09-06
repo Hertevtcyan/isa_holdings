@@ -9,7 +9,6 @@
             <ManagmentMainPhoto/>
       </div>
     </div>
-    
   </div>
 </template>
 

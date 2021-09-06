@@ -4,8 +4,11 @@
       <div class="apporach">Management Approach</div>
       <div class="risk">Pass through</div>
     </div>
+    <div>
+             <PhotoSubTitleParagraphButt sub-title="sdfsdfsdsdf" :image="{src: 'about/aboutManagment/helpingBusines.png', alt: 'sdfsdfsdsdf' }" />
+    </div>
 
-    <div class="help-busines">
+    <!-- <div class="help-busines">
       <img src="@/assets/about/aboutManagment/helpingBusines.png" alt="" />
       <div class="help-busines-text-butt">
         <h2>Helping a space business reach for the stars</h2>
@@ -15,15 +18,17 @@
         </p>
          <read-more-button type="text"  class="view">View More</read-more-button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import ReadMoreButton from '@/components/ui/ReadMoreButton.vue'
+import PhotoSubTitleParagraphButt from '@/components/ui/PhotoSubTitleParagraphButt.vue'
+// import ReadMoreButton from '@/components/ui/ReadMoreButton.vue'
 export default {
     components: {
-      ReadMoreButton
+      PhotoSubTitleParagraphButt
+      // ReadMoreButton
     }
 }
 </script>
