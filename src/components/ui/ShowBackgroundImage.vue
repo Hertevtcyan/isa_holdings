@@ -4,6 +4,7 @@
         <div class="container mx-auto px-4">
           <div class="who-we-ae">
             <h1 class="text-white">{{ text.title }}</h1>
+            <div class="line"></div>
             <p>{{ text.text }}</p>
           </div>
         </div>
@@ -33,6 +34,12 @@ export default {
 
 
 <style scoped lang="scss">
+
+.line{
+  background: #c1121f;
+  width: 157px;
+  height: 4px;
+}
 
 .about-container{
   width: 100%;

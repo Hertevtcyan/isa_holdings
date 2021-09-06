@@ -15,24 +15,24 @@ import TextRedLine from '@/components/ui/TextRedLine.vue'
 export default {
   components: { TextRedLine },
   data: () => ({
-    content: [
-      {
-        subTitle: 'Management Approach',
-        paragraph: 'Responsibility and Transparency Upholding our core values of modesty, respect and proximity to people, being socially responsible andmanaging according to the principles of corporate governance .'
-      },
-      {
-        subTitle: 'Pass through',
-        paragraph: 'Creating long-lasting advantages such as brand, technology, design, network and IP .'
-      },
-      {
-        subTitle: 'Participation',
-        paragraph: 'Generating a management approach that promotes participation and collective thinking in the decision-making process. .'
-      },
-       {
-        subTitle: 'Pass through',
-        paragraph: 'Managing the present with excellence and shaping our future to ensure long-term advantages.'
-      }
-    ]
+      content: [
+        {
+          subTitle: 'Management Approach',
+          paragraph: 'Responsibility and Transparency Upholding our core values of modesty, respect and proximity to people, being socially responsible andmanaging according to the principles of corporate governance .'
+        },
+        {
+          subTitle: 'Pass through',
+          paragraph: 'Creating long-lasting advantages such as brand, technology, design, network and IP .'
+        },
+        {
+          subTitle: 'Participation',
+          paragraph: 'Generating a management approach that promotes participation and collective thinking in the decision-making process. .'
+        },
+        {
+          subTitle: 'Pass through',
+          paragraph: 'Managing the present with excellence and shaping our future to ensure long-term advantages.'
+        }
+      ]
   })
 }
 </script>
