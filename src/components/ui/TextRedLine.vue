@@ -5,6 +5,9 @@
         <p>
           {{ $props.paragraph }}
         </p>
+        <p v-if="showParagraphSecond">
+          {{ $props.paragraphSecond }}
+        </p>
     </div>
 </template>
 
@@ -13,11 +16,18 @@ export default {
     props:{
         subTitle: {
             type: String,
-            required: true
+            required: false
         },
         paragraph: {
             type: String,
             required: true
+        },
+        paragraphSecond: {
+            type: String,
+            required: false,
+        },
+        showParagraphSecond: {
+          type: Boolean,
         }
     }
 }
@@ -29,7 +39,7 @@ export default {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-      font-size: 48px;
+      font-size: 2.5vw;
       line-height: 57px;
       color: #1d3557;
       padding-bottom: 24px;
@@ -39,14 +49,15 @@ export default {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-      font-size: 28px;
-      line-height: 42px;
+      font-size: 1.5vw;
+    line-height: 1.6;
+     
       padding-bottom: 24px;
       color: #1d3557;
     }
   .line {
     background: #c1121f;
-    width: 157px;
+    width: 8.2vw;
     height: 4px;
   }
 </style>

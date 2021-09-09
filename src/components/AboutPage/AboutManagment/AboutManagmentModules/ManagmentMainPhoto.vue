@@ -38,6 +38,7 @@ export default {
     box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
     width: 411px;
     height: 170px;
+    margin-left: calc(100% - 411px);
   }
   .apporach {
     background: #1d3557;

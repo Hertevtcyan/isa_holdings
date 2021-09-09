@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.3.5",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@vue/composition-api": "^1.1.4",
     "aos": "^3.0.0-beta.6",
@@ -16,7 +17,8 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
     "vue-aos": "^2.1.0",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.11",
+    "vue3-carousel": "^0.1.25"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

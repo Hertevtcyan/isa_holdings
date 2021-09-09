@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="bg-gray-200">
     <nav class="h-28 text-white bg-white flex items-center shadow">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto">
         <div class="flex justify-between items-center">
           <div class="flex">
             <div class="relative">
@@ -20,14 +20,14 @@
                   <div class="bg-white rounded-lg shadow-lg py-2 w-48">
                     <router-link to="/about/history" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">History</router-link>
                     <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Strategy</a>
-                    <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Vision and Values</a>
+                    <router-link to="/about/values" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Vision and Values</router-link>
                     <router-link to="/about/managment" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Managment Apoarch</router-link>
                   </div>
                 </div>
             </div>
-            <a href="#" class="font-semibold rounded-lg px-4 py-2 link">
+            <router-link to="/companies" class="font-semibold rounded-lg px-4 py-2 link">
               Our Compnies
-            </a>
+            </router-link>
 
             <div class="relative mt-2">
               <a href="#" class="font-semibold rounded-lg px-4 py-2 link" @click="isOpen1 = !isOpen1">
@@ -36,7 +36,7 @@
               <div v-if="isOpen1" class="fixed inset-0 w-full h-screen z-20 bg-black opacity-25" @click="isOpen1 = false"></div>
               <div v-if="isOpen1" class="absolute z-30 right-0 mt-2" :class="{'hidden': !isOpen1}">
                 <div class="bg-white rounded-lg shadow-lg py-2 w-48">
-                  <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">Company News</a>
+                  <router-link to="/news/companynews" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">Company News</router-link>
                   <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Media News</a>
                 </div>
               </div>

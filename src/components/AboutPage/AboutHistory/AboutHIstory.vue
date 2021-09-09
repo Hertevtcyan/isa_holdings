@@ -4,7 +4,7 @@
     <aboutFirstPhoto />
     
     <div class="container-bg">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto ">
         <div class="flex justify-between ">
           <ItAllStartedWithADream class="Dream" />
           <AlwaysUpstream class="upstream" />

@@ -4,7 +4,7 @@
       :page="{ path: 'About Us', section: 'Management Approach' }"
     />
     <AboutManagmentMainPhoto />
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto">
       <div class="flex justify-between my-container">
             <ManagmentMainText />
             <ManagmentMainPhoto/>

@@ -1,6 +1,6 @@
 <template>
   <div class="blue-history flex items-center">
-      <div class="card-history container mx-auto px-4">
+      <div class="card-history container mx-auto">
         <div class="active-history">
           <div class="history-text flex">
             <p>{{page.path}}</p>

@@ -1,7 +1,7 @@
 <template>
     <div class="about-container" :class="`about-container__${$props.img}`">
       <div class="shadow-block flex items-center">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto">
           <div class="who-we-ae">
             <h1 class="text-white">{{ text.title }}</h1>
             <div class="line"></div>
@@ -19,13 +19,15 @@ export default {
       type: Object
     },
     img:{
-      type: Object,
+      type: String,
       validator: (type)=>
           [
             'history',
             'mission',
             'strategy',
-            'management'
+            'management',
+            'OurCompanies',
+            'companyNews'
           ].includes(type),
     }
     }
@@ -69,7 +71,16 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.about-container__OurCompanies{
+  background: url("../../assets/OurCompanies/OurCompaniesMain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-container__companyNews{
+  background: url("../../assets/news/companyNews/companyNews.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 $colorText: #ffffff;
 p {
   color: $colorText;

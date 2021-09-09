@@ -18,11 +18,25 @@ const routes = [
     name: "Managmant",
     component: () => import('../view/Managment')
   },
-
   {
     path: "/about/strategy",
     name: "AboutStrategy",
     component: () => import('../view/AboutStrategy')
+  },
+  {
+    path: "/about/values",
+    name: "aboutValues",
+    component: () => import('../view/AboutValuesPage')
+  },
+  {
+    path: "/companies",
+    name: "companies",
+    component: () => import('../view/OurCompaniesPage.vue')
+  },
+  {
+    path: "/news/companynews",
+    name: "companiNews",
+    component: () => import('../view/NewsCompanyNews.vue')
   }
 ];
 
