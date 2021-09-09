@@ -12,7 +12,7 @@
               :showPhoto="true"
               :image="{
                 src: 'about/aboutManagment/helpingBusines.png',
-               alt: 'sdfsdfsdsdf',
+                alt: 'sdfsdfsdsdf',
                }" />
     </div>
   </div>
