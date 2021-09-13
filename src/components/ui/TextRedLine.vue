@@ -2,16 +2,16 @@
   <div>
     <h2 :class="`${$props.colorSubtitle}`">{{ $props.subTitle }}</h2>
     <div class="line"></div>
-    <p>
+    <p :class="`${$props.colorText}`">
       {{ $props.paragraph }}
     </p>
-    <p v-if="paragraph2">
+    <p v-if="paragraph2" :class="`${$props.colorText}`">
       {{ $props.paragraph2 }}
     </p>
-    <p v-if="paragraph3">
+    <p v-if="paragraph3" :class="`${$props.colorText}`">
       {{ $props.paragraph3 }}
     </p>
-    <p v-if="showParagraphSecond">
+    <p v-if="showParagraphSecond" :class="`${$props.colorText}`">
       {{ $props.paragraphSecond }}
     </p>
   </div>
@@ -43,6 +43,9 @@ export default {
     colorSubtitle: {
       type: String,
     },
+    colorText: {
+      type: String
+    }
   },
 };
 </script>
@@ -73,10 +76,21 @@ p {
   font-weight: 300;
   font-size: 1.5vw;
   line-height: 1.6;
-
   padding-bottom: 24px;
   color: #1d3557;
 }
+
+.textColor{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 42px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+
 .line {
   background: #c1121f;
   width: 8.2vw;
