@@ -56,7 +56,7 @@
 
       <div class="mt-4 flex w-full">
         <div class="w-3/4">
-          <router-link class="footerlink_bottom" to="/">Privacy Policy</router-link>
+          <router-link class="footerlink_bottom" to="/privacypolice">Privacy Policy</router-link>
           <router-link class="footerlink_bottom p-16" to="/">Terms & Conditions</router-link>
           <router-link class="footerlink_bottom" to="/"> © 2021 ISA Holding Inc. All rights reserved.</router-link>
         </div>

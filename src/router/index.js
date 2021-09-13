@@ -37,6 +37,16 @@ const routes = [
     path: "/news/companynews",
     name: "companiNews",
     component: () => import('../view/NewsCompanyNews.vue')
+  },
+  {
+    path: "/news/media",
+    name: "newsMedia",
+    component: () => import('../view/NewsMedia.vue')
+  },
+  {
+    path: "/privacypolice",
+    name: "privacyPolice",
+    component: () => import('../view/PrivacyPolice.vue')
   }
 ];
 

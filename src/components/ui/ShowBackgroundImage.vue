@@ -27,7 +27,8 @@ export default {
             'strategy',
             'management',
             'OurCompanies',
-            'companyNews'
+            'companyNews',
+            'media'
           ].includes(type),
     }
     }
@@ -78,6 +79,11 @@ export default {
 }
 .about-container__companyNews{
   background: url("../../assets/news/companyNews/companyNews.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-container__media{
+  background: url("../../assets/news/media/mediaMainPhoto.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

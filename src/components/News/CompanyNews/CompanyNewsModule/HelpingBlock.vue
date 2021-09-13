@@ -1,25 +1,35 @@
 <template>
-    <div>
-        <div class="helping-left">
-<PhotoSubTitleParagraphButt
-              sub-title="Helping a space business reach for the stars"
-              paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-              :showButton="true"
-              :showPhoto="true"
-              :image="{
-                src: 'about/aboutManagment/helpingBusines.png',
-               alt: 'sdfsdfsdsdf',
-               }" />
-        </div>
-        <div class="helping-rigth">
-
-        </div>
+  <div class="flex container justify-between mx-auto">
+    <div class="helping-left">
+      <PhotoSubTitleParagraphButt
+        sub-title="Helping a space business reach for the stars"
+        paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
+        :showButton="true"
+        :showYoutubeIcon="true"
+        :image="{
+          src: 'news/companyNews/helpingLeft.png',
+          alt: 'sdfsdfsdsdf',
+        }"
+      />
     </div>
+    <div class="helping-rigth">
+      <PhotoSubTitleParagraphButt
+        sub-title="Helping a space business reach for the stars"
+        paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
+        :showButton="true"
+        :showYoutubeIcon="true"
+        :image="{
+          src: 'news/companyNews/helpingRigth.png',
+          alt: 'sdfsdfsdsdf',
+        }"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
-import PhotoSubTitleParagraphButt from '@/components/ui/PhotoSubTitleParagraphButt.vue'
+import PhotoSubTitleParagraphButt from "@/components/ui/PhotoSubTitleParagraphButt.vue";
 export default {
-    components: {PhotoSubTitleParagraphButt}
-}
+  components: { PhotoSubTitleParagraphButt },
+};
 </script>

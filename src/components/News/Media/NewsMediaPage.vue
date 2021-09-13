@@ -1,0 +1,99 @@
+<template>
+  <div>
+    <div>
+      <NewsMediaMainPhoto />
+    </div>
+    <div
+      class="
+        corporate-media
+        flex
+        container
+        justify-between
+        mx-auto
+        items-center
+      "
+    >
+      <div class="corporate">
+        <div class="btn" @click="showCorporate">
+          <TextRedLine
+            subTitle="Corporate"
+            paragraph="Browse through our images of activities throughout the Group"
+          />
+        </div>
+      </div>
+      <div class="media">
+        <div class="btn" @click="showMedia">
+          <TextRedLine
+            subTitle="Media Kit"
+            paragraph="Are you one of our partners? Download our official logo and corporate brand guidelines."
+          />
+        </div>
+      </div>
+    </div>
+    <div v-if="showCorporateBlock">
+      <div class="corporate-blo container mx-auto">
+        <FirstSlider />
+      </div>
+      <MobileManager />
+      <div class="container mx-auto">
+        <FirstSlider />
+      </div>
+      <FirstFooter/>
+    </div>
+
+    <div v-if="showMediaBlock" class="media-downloads container mx-auto">
+      <DownloadBrands />
+    </div>
+  </div>
+</template>
+
+
+
+<script>
+import NewsMediaMainPhoto from "./NewsMediaModules/NewsMediaMainPhoto.vue";
+import TextRedLine from "@/components/ui/TextRedLine.vue";
+import FirstSlider from "./Corporate/FirstSLider.vue";
+import DownloadBrands from "./MediaDownload/DownloadBrands.vue";
+import MobileManager from "./Corporate/MobileManager.vue";
+import FirstFooter from './Corporate/FirstFooter.vue'
+export default {
+  components: {
+    NewsMediaMainPhoto,
+    TextRedLine,
+    FirstSlider,
+    DownloadBrands,
+    MobileManager,
+    FirstFooter
+  },
+  data() {
+    return {
+      showCorporateBlock: true,
+      showMediaBlock: false,
+    };
+  },
+
+  methods: {
+    showCorporate() {
+      this.showCorporateBlock = true;
+      this.showMediaBlock = false;
+    },
+    showMedia() {
+      this.showMediaBlock = true;
+      this.showCorporateBlock = false;
+    },
+  },
+};
+</script>
+
+
+<style scoped>
+.corporate,
+.media {
+  width: 626px;
+  margin-top: 56px;
+}
+.btn {
+  max-width: 626px;
+  cursor: pointer;
+}
+</style>

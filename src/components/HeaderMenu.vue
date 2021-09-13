@@ -37,7 +37,7 @@
               <div v-if="isOpen1" class="absolute z-30 right-0 mt-2" :class="{'hidden': !isOpen1}">
                 <div class="bg-white rounded-lg shadow-lg py-2 w-48">
                   <router-link to="/news/companynews" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">Company News</router-link>
-                  <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Media News</a>
+                  <router-link to="/news/media" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Media News</router-link>
                 </div>
               </div>
             </div>

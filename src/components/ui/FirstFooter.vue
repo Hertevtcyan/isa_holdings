@@ -33,7 +33,7 @@ export default {
     img: {
       type: String,
       validator: (type) =>
-        ["history", "mission", "strategy", "management"].includes(type),
+        ["history", "mission", "strategy", "management", "media"].includes(type),
     },
     button: {
         type: Boolean,
@@ -55,6 +55,14 @@ export default {
 }
 .corporate-container-bg__mission {
   background-image: url("../../assets/about/aboutValues/ourCode.png");
+  width: 100%;
+  height: 720px;
+  padding-top: 65px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.corporate-container-bg__media {
+  background-image: url("../../assets/news/media/firstFooterPhone.png");
   width: 100%;
   height: 720px;
   padding-top: 65px;
