@@ -56,9 +56,9 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="font-semibold rounded-lg px-4 py-2 link">
+            <router-link to="/contact" class="font-semibold rounded-lg px-4 py-2 link">
               Contact Us
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
