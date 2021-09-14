@@ -1,7 +1,7 @@
 <template>
   <div>
     <ShowPathPage
-      :page="{ path: 'About Us', section: 'Management Approach' }"
+      :page="{ path: 'About Us', showIcon: true, section: 'Management Approach' }"
     />
     <AboutManagmentMainPhoto />
     <div class="container mx-auto">

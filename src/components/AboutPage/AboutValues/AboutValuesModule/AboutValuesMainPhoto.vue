@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ShowPathPage :page="{path: 'About Us', section: 'Vision and Values'}"/>
+        <ShowPathPage :page="{path: 'About Us', showIcon: true, section: 'Vision and Values'}"/>
         <ShowBackgroundImage img="mission" :text="{title:'Vision and Values', text:'At Isa Holding, we advance sustainable economic growth and financial opportunity.' }" />
     </div>
 </template>

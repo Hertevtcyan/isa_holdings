@@ -4,7 +4,7 @@
         <div class="active-history">
           <div class="history-text flex">
             <p>{{page.path}}</p>
-            <img
+            <img v-if="page.showIcon"
               src="@/assets/about/aboutHistory/pathHistory.png"
               class="history-icon"
               alt=""

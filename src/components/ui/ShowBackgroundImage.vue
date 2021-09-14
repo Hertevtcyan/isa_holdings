@@ -28,7 +28,8 @@ export default {
             'management',
             'OurCompanies',
             'companyNews',
-            'media'
+            'media',
+            'career'
           ].includes(type),
     }
     }
@@ -84,6 +85,11 @@ export default {
 }
 .about-container__media{
   background: url("../../assets/news/media/mediaMainPhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-container__career{
+  background: url("../../assets/career/careerMain.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

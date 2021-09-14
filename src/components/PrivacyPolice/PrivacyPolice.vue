@@ -1,6 +1,6 @@
 <template>
   <div>
-      <ShowPathPage :page="{path: 'Privacy Police', section: ''}"/>
+      <ShowPathPage :page="{path: 'Privacy Police', showIcon: false, section: ''}"/>
     <div class="container mx-auto my-container">
       <TextRedLine
         v-for="(data, index) in content"

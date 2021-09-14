@@ -17,7 +17,6 @@ export default {
   },
   methods: {
     showItem(item) {
-      console.log(88888888);
       this.$emit("showItem", item);
     },
   },
