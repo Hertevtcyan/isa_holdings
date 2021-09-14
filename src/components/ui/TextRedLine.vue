@@ -65,9 +65,10 @@ h2 {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 57px;
   color: #ffffff;
+  padding-bottom: 24px;
 }
 p {
   margin-top: 24px;
@@ -87,7 +88,7 @@ p {
   font-size: 22px;
   line-height: 42px;
   color: #FFFFFF;
-  opacity: 0.5;
+  width: 90%;
 }
 
 

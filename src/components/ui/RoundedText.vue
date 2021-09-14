@@ -1,8 +1,5 @@
 <template>
 
-<!--    <div class="rounded_div"-->
-<!--         v-for="number in count"-->
-<!--         :key="number">-->
         <div class="rounded_big_div">
           <div class="flex mt-6">
             <div class="rounded_div"></div>
@@ -33,8 +30,6 @@
           </div>
         </div>
 
-<!--    </div>-->
-
 </template>
 
 
@@ -64,11 +59,7 @@ export default {
     }
   },
 
-  setup(){
-    const count = ref(4)
 
-    return {count}
-  }
 };
 
 </script>
@@ -90,7 +81,7 @@ export default {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
-  opacity: 0.5;
+  width: 70%;
 }
 
 
