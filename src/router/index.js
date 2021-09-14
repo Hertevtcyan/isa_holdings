@@ -47,6 +47,11 @@ const routes = [
     path: "/privacypolice",
     name: "privacyPolice",
     component: () => import('../view/PrivacyPolice.vue')
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import('../view/Contact.vue')
   }
 ];
 
