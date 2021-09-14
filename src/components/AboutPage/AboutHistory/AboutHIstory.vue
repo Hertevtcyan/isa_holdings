@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ShowPathPage :page="{path:'About Us',section:'Our History'}"/>
+    <ShowPathPage :page="{path:'About Us', showIcon: true, section:'Our History'}"/>
     <aboutFirstPhoto />
     
     <div class="container-bg">
