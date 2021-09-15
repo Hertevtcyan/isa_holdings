@@ -5,10 +5,10 @@
       subTitle="Contact Us"
   />
   <div class="container mx-auto flex">
-    <router-link to="/contact/customers" class="font-semibold rounded-lg py-2 link">
+    <router-link :to="{name: 'Customers'}" class="font-semibold rounded-lg py-2 link">
       Customers
     </router-link>
-    <router-link to="/contact/offices" class="font-semibold rounded-lg py-2 link ml-16">
+    <router-link   :to="{name: 'Offices'}" class="font-semibold rounded-lg py-2 link ml-16">
       Offices
     </router-link>
     <router-link to="/contact/popular-questions" class="font-semibold rounded-lg py-2 link ml-16">
@@ -16,8 +16,7 @@
     </router-link>
   </div>
   <hr />
-  <Questions />
-  <hr />
+  <router-view></router-view>
   <div class="container mx-auto mt-4 flex justify-between">
     <PhotoSubTitleParagraphButt
         :showButton="true"

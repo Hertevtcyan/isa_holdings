@@ -57,7 +57,7 @@ const routes = [
       {
         name: 'Customers',
         path: 'customers',
-        component: () => import('../view/PrivacyPolice.vue')
+        component: () => import('../components/Contact/Customers/CustomersChild.vue')
       },
       {
         name: 'Offices',
@@ -71,6 +71,24 @@ const routes = [
       },
     ]
   },
+//   { 
+//     path: '/referal', 
+//     name: 'Referal', 
+//     component: () => import('../views/dashboard/Referal.vue'), 
+//     redirect: '/referal/link', 
+//     children: [ 
+//         { 
+//             name: 'Link', 
+//             path: 'link', 
+//             component: () => import('../views/dashboard/referal/Link.vue') 
+//         }, 
+//         { 
+//             name: 'Report', 
+//             path: 'report', 
+//             component: () => import('../views/dashboard/referal/Report.vue') 
+//         }, 
+//     ] 
+// },
 
   {
     path: "/career",
