@@ -1,11 +1,11 @@
 <template>
-  <div class="editprofilebox mt-10" >
+  <div class="editprofilebox mt-10 mx-auto container" >
 
     <vue-collapsible-panel-group>
       <vue-collapsible-panel ref="dropdown" :expanded="expanded">
         <template #title>
           <div class="flex justify-between">
-            <p class="editprofiletitle">
+            <p class="question_title">
               <slot name="title"></slot>
             </p>
           </div>
@@ -13,13 +13,14 @@
         <template #icon>
           <div >
             <img src="@/assets/icons/hideQuestions.svg" alt="">
-            <!-- <img v-if="showBody" src="@/assets/icons/dashboard/profile/x.svg" alt=""> -->
           </div>
         </template>
         <template #content>
           <div class="Editboxbody">
             <div>
-              <slot name="body"></slot>
+              <p class="question_body">
+                <slot name="body"></slot>
+              </p>
             </div>
           </div>
         </template>
@@ -41,5 +42,47 @@ export default {
 </script>
 <style scoped>
 
+.question_title{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  color: #1D3557;
+}
+
+.question_body{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  color: #1D3557;
+  width: 70%;
+  height: auto;
+}
+
+.vcp__header{
+  background: none !important;
+}
+.vcpg{
+  border:none !important;
+}
+.vcp__body{
+  border:none !important;
+  background: none !important;
+}
+
+.vcp__body {
+  overflow: unset !important;
+}
+
+
+.editprofilebox{
+  width:100%;
+  border-radius: 24px;
+  padding: 0px 30px 45px;
+}
 
 </style>

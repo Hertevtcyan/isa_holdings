@@ -16,8 +16,8 @@
     </router-link>
   </div>
   <hr />
+  <h1>adasd</h1>
   <Questions />
-  <hr />
   <div class="container mx-auto mt-4 flex justify-between">
     <PhotoSubTitleParagraphButt
         :showButton="true"
