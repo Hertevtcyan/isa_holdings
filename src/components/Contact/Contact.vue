@@ -17,6 +17,7 @@
   </div>
   <hr />
   <router-view></router-view>
+
   <div class="container mx-auto mt-4 flex justify-between">
     <PhotoSubTitleParagraphButt
         :showButton="true"
