@@ -41,6 +41,8 @@ export default {
 .btn__read, .btn__view{
   background: rgba(193, 18, 31, 0.85);
   backdrop-filter: blur(1px);
+  color: #fff;
+  font-size: 24px;
 }
 
 .btn__transparentView{

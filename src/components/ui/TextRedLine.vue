@@ -56,7 +56,7 @@ h2 {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
-  font-size: 2.5vw;
+  font-size: 48px;
   line-height: 57px;
   color: #1d3557;
   padding-bottom: 24px;
@@ -90,11 +90,12 @@ p {
   color: #FFFFFF;
   width: 90%;
 }
-
-
 .line {
   background: #c1121f;
   width: 8.2vw;
   height: 4px;
+}
+.career-first-footer-h {
+  font-size: 46px;
 }
 </style>

@@ -1,17 +1,54 @@
 <template>
   <div :class="`corporate-container-bg__${$props.img}`">
-    <div class="container  corporate">
-      <div class="corporate-text-wrapper" :class="`corporate-text-wrapper__${$props.small}`">
-          <h2 class="ml-52">{{properties.title}}</h2>
-          <div class="line ml-52"></div>
-          <p class="ml-52">
-            {{properties.text}}
+    <div class="container flex mx-auto justify-between corporate">
+      <div class="corporate-text-wrapper-my" v-if="!mySetings">
+        <div class="container-wrapp">
+          <h2>{{ properties.title }}</h2>
+          <div class="line"></div>
+          <p>
+            {{ properties.text }}
           </p>
-          <p v-if="properties.textTwo !== ''"  class="ml-52">
-            {{properties.textTwo}}
+          <p v-if="properties.textTwo !== ''">
+            {{ properties.textTwo }}
           </p>
           <read-more-button v-if="button" type="transparent" class="view"
-          >View More</read-more-button>
+            >View More</read-more-button
+          >
+        </div>
+        <div class="explore-bl">
+          <div class="exp-main-bl mx-auto">
+          <TextRedLine
+            colorSubtitle="career-first-footer-h"
+            subTitle="EXPLORE OUR VACANCIES"
+            paragraph="We are committed to enriching lives and we seek integrity, honesty, and transparency in our relationships. We strive to source the best local and international talent."
+          />
+          <div class="button-join">
+            <ReadMoreButton
+            type="read">
+            Join Now
+            </ReadMoreButton>
+        
+          </div>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        v-else
+        class="corporate-text-wrapper"
+        :class="`corporate-text-wrapper__${$props.small}`"
+      >
+        <h2>{{ properties.title }}</h2>
+        <div class="line"></div>
+        <p>
+          {{ properties.text }}
+        </p>
+        <p v-if="properties.textTwo !== ''">
+          {{ properties.textTwo }}
+        </p>
+        <read-more-button v-if="button" type="transparent" class="view"
+          >View More</read-more-button
+        >
       </div>
     </div>
   </div>
@@ -19,10 +56,12 @@
 
 <script>
 import ReadMoreButton from "@/components/ui/ReadMoreButton.vue";
+import TextRedLine from "@/components/ui/TextRedLine.vue";
 
 export default {
   components: {
     ReadMoreButton,
+    TextRedLine,
   },
   props: {
     properties: {
@@ -31,14 +70,24 @@ export default {
     img: {
       type: String,
       validator: (type) =>
-        ["history", "mission", "strategy", "management", "media", "career"].includes(type),
+        [
+          "history",
+          "mission",
+          "strategy",
+          "management",
+          "media",
+          "career",
+        ].includes(type),
     },
     button: {
-        type: Boolean,
+      type: Boolean,
     },
     small: {
-      type: String
-    }
+      type: String,
+    },
+    mySetings: {
+      type: Boolean,
+    },
   },
 };
 </script>
@@ -123,7 +172,6 @@ p {
   margin-top: 24px;
 }
 
-
 .corporate-text-wrapper {
   width: 60%;
   margin-top: 90px;
@@ -137,4 +185,47 @@ p {
   opacity: 0.5;
   width: 80%;
 }
+.corporate-text-wrapper__career {
+  background-color: #840032;
+  box-shadow: 4px 4px 20px #001315;
+  margin-top: 50px;
+  opacity: 0.5;
+  width: 60%;
+}
+.left-block {
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+}
+
+.corporate-text-wrapper-my {
+  max-width: 592px;
+}
+.container-wrapp {
+  max-width: 893px;
+  background: #840032;
+  opacity: 0.35;
+  box-shadow: 4px 4px 20px #000000;
+  height: 480px;
+}
+.corporate {
+  position: relative;
+}
+.explore-bl {
+  width: 716px;
+  height: 506px;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 206px;
+  filter: drop-shadow(4px 16px 25px rgba(29, 53, 87, 0.1));
+}
+.exp-main-bl {
+  max-width: 592px;
+  margin-top: 62px;
+}
+.button-join {
+  margin-left: 60%;
+}
+
 </style>
