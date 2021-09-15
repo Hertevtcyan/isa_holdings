@@ -5,18 +5,18 @@
       subTitle="Contact Us"
   />
   <div class="container mx-auto flex">
-    <router-link to="#" class="font-semibold rounded-lg py-2 link">
+    <router-link to="/contact/customers" class="font-semibold rounded-lg py-2 link">
       Customers
     </router-link>
-    <router-link to="#" class="font-semibold rounded-lg py-2 link ml-16">
+    <router-link to="/contact/offices" class="font-semibold rounded-lg py-2 link ml-16">
       Offices
     </router-link>
-    <router-link to="#" class="font-semibold rounded-lg py-2 link ml-16">
+    <router-link to="/contact/popular-questions" class="font-semibold rounded-lg py-2 link ml-16">
       Popular questions
     </router-link>
   </div>
   <hr />
-
+  <Questions />
   <hr />
   <div class="container mx-auto mt-4 flex justify-between">
     <PhotoSubTitleParagraphButt
@@ -46,8 +46,9 @@ import ShowPathPage from "../ui/ShowPathPage";
 import TextRedLine from "../ui/TextRedLine";
 import {ref} from "vue";
 import PhotoSubTitleParagraphButt from "../ui/PhotoSubTitleParagraphButt";
+import Questions from "../../view/Questions";
 export default {
-  components: {PhotoSubTitleParagraphButt, TextRedLine, ShowPathPage},
+  components: {Questions, PhotoSubTitleParagraphButt, TextRedLine, ShowPathPage},
 
   setup(){
     const active = ref(true)
