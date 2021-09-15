@@ -51,7 +51,27 @@ const routes = [
   {
     path: "/contact",
     name: "contact",
-    component: () => import('../view/Contact.vue') },
+    component: () => import('../view/Contact.vue'),
+    redirect: '/contact/customers',
+    children: [
+      {
+        name: 'Customers',
+        path: 'customers',
+        component: () => import('../view/PrivacyPolice.vue')
+      },
+      {
+        name: 'Offices',
+        path: 'offices',
+        component: () => import('../view/PrivacyPolice.vue')
+      },
+      {
+        name: 'Popular questions',
+        path: 'popular-questions',
+        component: () => import('../view/Questions.vue')
+      },
+    ]
+  },
+
   {
     path: "/career",
     name: "career",
