@@ -29,7 +29,8 @@ export default {
 
 
 #app{
-  background: white;
+  /*background: white;*/
+  background-image: url("./assets/icons/Rectangle.png");
 }
 
 </style>

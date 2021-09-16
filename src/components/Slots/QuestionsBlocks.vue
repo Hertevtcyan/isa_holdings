@@ -1,6 +1,5 @@
 <template>
   <div class="editprofilebox mt-10 mx-auto container" >
-
     <vue-collapsible-panel-group>
       <vue-collapsible-panel ref="dropdown" :expanded="expanded">
         <template #title>
@@ -16,7 +15,7 @@
           </div>
         </template>
         <template #content>
-          <div class="Editboxbody">
+          <div>
             <div>
               <p class="question_body">
                 <slot name="body"></slot>
@@ -63,26 +62,11 @@ export default {
   height: auto;
 }
 
-.vcp__header{
-  background: none !important;
-}
-.vcpg{
-  border:none !important;
-}
-.vcp__body{
-  border:none !important;
-  background: none !important;
-}
-
-.vcp__body {
-  overflow: unset !important;
-}
-
 
 .editprofilebox{
   width:100%;
   border-radius: 24px;
-  padding: 0px 30px 45px;
+  padding: 0px 0px 45px;
 }
 
 </style>

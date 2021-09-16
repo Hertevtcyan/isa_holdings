@@ -2,6 +2,10 @@
   <!-- <div class="flex"> -->
 <div class="questions">
   <div>
+    <div class="container mx-auto question_one_text">
+      <h1>You can find answers to some of the most common questions about our business by reading the FAQs below.</h1>
+    </div>
+
     <div class="questions_block_top">
       <QuestionsBlocks>
         <template v-slot:title><span>Who should I contact with an investor enquiry?</span></template>
@@ -95,6 +99,7 @@ export default {
 </script>
 
 <style scoped>
+
 /* #img{
   overflow: hidden;
 } */
@@ -112,6 +117,45 @@ export default {
   border-bottom: #1D3557 1px solid;
   border-top: #1D3557 1px solid;
   box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+}
+
+.question_one_text h1{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1D3557;
+  margin-top: 16px;
+  margin-bottom: 66px;
+  width: 57%;
+}
+
+</style>
+
+<!--For Questions blocks -->
+
+<style>
+.vcp__header{
+  background: transparent !important;
+}
+.vcp__header{
+  background: none !important;
+}
+.vcpg{
+  border:none !important;
+}
+.vcp__body{
+  border:none !important;
+  background: none !important;
+}
+
+.vcp__body {
+  overflow: unset !important;
+}
+
+.vcp--expanded .vcp__header-icon{
+  transform:rotate(-90deg) !important;
 }
 
 </style>
