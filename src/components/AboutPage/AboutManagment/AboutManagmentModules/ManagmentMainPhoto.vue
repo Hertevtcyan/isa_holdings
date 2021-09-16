@@ -32,6 +32,7 @@ export default {
 
 <style scoped lang="scss">
 .managment-main-photo {
+  width: 716px;
   .approach-risk {
     background: #ffffff;
     border: 1px solid #1d3557;
@@ -65,10 +66,10 @@ export default {
     text-align: center;
   }
   .help-busines {
-    border: 2px solid;
-    width: 716px;
+   
+    width: 100%;
     margin-top: 82px;
-    height: 871px;
+   
   }
   img {
     width: 100%;
@@ -96,4 +97,14 @@ export default {
     width: 592px;
   }
 }
+// @media screen and (max-width: 1279px) {
+//  .managment-main-photo{
+//    width: 300px;
+//     margin-top: 82px;
+//  }
+//  .approach-risk{
+//    margin-left: 100%;
+//  }
+// }
+
 </style>

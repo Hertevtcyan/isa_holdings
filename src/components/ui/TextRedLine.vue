@@ -75,8 +75,8 @@ p {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.5vw;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 42px;
   padding-bottom: 24px;
   color: #1d3557;
 }
@@ -98,4 +98,36 @@ p {
 .career-first-footer-h {
   font-size: 46px;
 }
+
+@media screen and (max-width: 1024px) {
+  p{
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 1487px) {
+  p{
+   margin-top: 24px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 24px;
+  color: #1d3557;
+  }
+}
+@media screen and (max-width: 1279px) {
+  p{
+   margin-top: 24px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 24px;
+  color: #1d3557;
+  }
+}
+
 </style>

@@ -9,7 +9,10 @@
       />
       <h1 v-if="$props.image_text">{{ $props.image_text }}</h1>
     </div>
-    <div :class="`${$props.textBlockBackground}`" class="help-busines-text-butt">
+    <div
+      :class="`${$props.textBlockBackground}`"
+      class="help-busines-text-butt"
+    >
       <h2 v-if="$props.subTitle">{{ $props.subTitle }}</h2>
       <p v-if="$props.paragraph">{{ $props.paragraph }}</p>
       <read-more-button type="text" v-if="$props.showButton" class="view"
@@ -51,20 +54,16 @@ export default {
     },
     showYoutubeIcon: {
       type: Boolean,
-      required: true
+      required: true,
     },
     textBlockBackground: {
       type: String,
-      required: false
+      required: false,
     },
-    textBlockBackground:{
+    textBlockBackground: {
       type: String,
-      validator: (type)=>
-          [
-            'color1',
-            'color2',
-          ].includes(type),
-    }
+      validator: (type) => ["color1", "color2"].includes(type),
+    },
   },
 };
 </script>
@@ -73,25 +72,27 @@ export default {
 
 
 <style scoped lang="scss">
-.color1{
-    background: #7C7287;
-    h2, p, button{
-      color: #FFFFFF!important;
-    }
+.color1 {
+  background: #7c7287;
+  h2,
+  p,
+  button {
+    color: #ffffff !important;
+  }
 }
-.color2{
-  background: #1D3557;
-    h2, p, button{
-      color: #FFFFFF!important;
-    }
-  
+.color2 {
+  background: #1d3557;
+  h2,
+  p,
+  button {
+    color: #ffffff !important;
+  }
 }
 .help-busines {
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.08);
   width: 716px;
   margin-top: 82px;
-  // height: 871px;
 }
 
 .img_div {
@@ -130,7 +131,7 @@ img {
 .help-busines-text-butt {
   padding-left: 62px;
   position: relative;
-  
+
   h2 {
     font-family: Rubik;
     font-style: normal;
@@ -154,6 +155,18 @@ img {
     line-height: 42px;
     color: #1d3557;
     padding-bottom: 138px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .help-busines-text-butt {
+    h2 {
+      padding-top: 40px;
+    }
+    p{
+      line-height: 36px;
+      padding-bottom: 100px;
+    }
   }
 }
 </style>

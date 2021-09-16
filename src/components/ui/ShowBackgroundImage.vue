@@ -53,7 +53,7 @@ export default {
 .about-container__history{
   background: url("../../assets/about/aboutHistory/history.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .about-container__mission{

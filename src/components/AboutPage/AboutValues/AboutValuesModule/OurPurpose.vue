@@ -5,6 +5,7 @@
           :key='index'
           :class="!index?'flex justify-between change-size':''">
         <TextRedLine 
+        :showParagraphSecond="true"
           v-bind="data"   
         />
         <div v-if="!index" class="ourPhoto">
@@ -25,13 +26,13 @@ export default {
      data: () => ({
       content: [
         {
-          subTitle: 'Management Approach',
+          subTitle: 'Our Purpose',
          paragraphSecond: 'Our purpose comes to life through our four core values: Client Service, Excellence, Integrity, and Partnership.',
-         paragraph: 'Responsibility and Transparency Upholding our core values of modesty, respect and proximity to people, being socially responsible andmanaging according to the principles of corporate governance .'
+         paragraph: 'Drawing on over 5 years of experience working with the world’s leading businesses, entrepreneurs, and institutions, we mobilize our people, culture, technologies, and ideas to advance the success of our clients, broaden individual prosperity, and accelerate economic progress for all.'
         },
         {
-          subTitle: 'Excellence',
-          paragraph: 'We aspire to nothing less than excellence, consistently striving for exceptional performance and achieving outstanding results for our clients, our shareholders, and our company.'
+          subTitle: 'Client Service',
+          paragraph: 'We lead with a service mindset, enabling us to anticipate and adapt to the needs of our clients and consumers by delivering thoughtful, innovative solutions.'
         },
         {
           subTitle: 'Integrity',
@@ -65,4 +66,40 @@ export default {
         width: 100%;
     }
 }
+
+
+
+
+
+
+@media screen and (max-width: 1487px) {
+  .ourPhoto{
+    width: 700px;
+    img {
+        width: 700px;
+        max-width: 700px;
+    }
+  }
+ .change-size div:first-child {
+    margin-top: 0;
+    width: 498px;
+    p{
+      font-size: 20px;
+      line-height: 38px;
+    }
+}
+}
+@media screen and (max-width: 1279px) {
+   .ourPhoto{
+    width: 500px;
+    img {
+        width: 500px;
+        max-width: 500px;
+    }
+  }
+  .change-size {
+  padding-bottom: 69px;
+}
+}
+
 </style>
