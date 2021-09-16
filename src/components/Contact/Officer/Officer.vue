@@ -2,7 +2,7 @@
   <div>
     <div class="container mx-auto flex justify-between officer">
       <div class="officer_one">
-        <Dropdown />
+        <dropdown :options="arrayOfObjects" :selected="object"></dropdown>
       </div>
       <div class="officer_two">
         <p>You can find contact details for our main offices in each of the countries and territories where we operate by selecting your location using the dropdown menu below.</p>
@@ -11,7 +11,7 @@
 
     <div class="container mx-auto flex justify-between address">
         <div class="address_one">
-          <div>
+          <div v-if="arrayOfObjects">
             <p class="address_text">Head office and main branch<br>
               66 Ataturk Street<br>
               Istambul<br>
@@ -20,7 +20,6 @@
               Tel: +44(60) 655 000<br>
               Fax: +44(60) 655 501
             </p>
-
           </div>
         </div>
 
@@ -40,15 +39,39 @@
 
 </template>
 
+
 <script>
-import Drobdown from "../../../view/Drobdown.vue";
+import dropdown from 'vue-dropdowns';
+import {ref, reactive} from "vue";
 
 export default {
 
+  setup(){
+    const arrayOfObjects = reactive([
+      {name:'Turkey'},
+      {name:'Russia'},
+      {name:'U.S.A'},
+      {name:'England'}
+    ])
+    const object = reactive({
+      name: 'Turkey',
+    })
+
+    return{
+      arrayOfObjects,
+      object
+    }
+  },
 
   components: {
-    Drobdown
+    dropdown
   },
+
+  methods: {
+    methodToRunOnSelect(payload) {
+      this.object = payload;
+    }
+  }
 
 
 }
@@ -91,7 +114,6 @@ export default {
 
 .officer_one{
   width: 45%;
-  border: 2px solid;
 }
 
 .officer_two{
@@ -107,15 +129,25 @@ export default {
   color: #1D3557;
 }
 
+</style>
+
+<style>
+.dropdown-toggle{
+  font-size: 56px;
+}
+
+.dropdown-toggle:hover{
+  background: transparent !important;
+}
+
 .btn-group {
   width: 77%;
   height: 40px;
   position: relative;
-  margin: 26px 71px ;
+  margin: 0px 73px ;
   display: inline-block;
   vertical-align: middle;
 }
-
 
 .dropdown-menu {
   position: absolute;
@@ -125,7 +157,7 @@ export default {
   float: left;
   min-width: 100%;
   padding: 5px 0;
-  margin: 2px 0 0;
+  margin: 60px 0 0;
   list-style: none;
   font-size: 14px;
   text-align: left;
@@ -134,6 +166,38 @@ export default {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+}
+
+
+.dropdown-menu > li > a{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 66px;
+  color: #1D3557;
+}
+
+.dropdown-menu > li > a:hover{
+  background: red;
+  color: white;
+}
+
+.caret{
+  display: none;
+}
+
+.dropdown-toggle::after{
+  content:"";
+  position: absolute;
+  right: 1px;
+  top: 40px;
+  background-image: url("../../../assets/icons/hideQuestions.svg");
+  background-repeat: no-repeat;
+  padding: 15px;
+  color: #000000;
+  font-size: 14px;
+  z-index: 1;
 }
 
 </style>

@@ -53,7 +53,7 @@ const routes = [
     name: "contact",
     component: () => import('../view/Contact.vue'),
     redirect: '/contact/customers',
-    children: [
+    children: [ 
       {
         name: 'Customers',
         path: 'customers',
