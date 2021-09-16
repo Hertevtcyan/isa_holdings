@@ -62,7 +62,7 @@ const routes = [
       {
         name: 'Offices',
         path: 'offices',
-        component: () => import('../view/PrivacyPolice.vue')
+        component: () => import('../components/Contact/Officer/Officer.vue')
       },
       {
         name: 'Popular questions',

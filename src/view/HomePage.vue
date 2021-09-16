@@ -34,16 +34,4 @@ export default {
 
 <style scoped>
 
-
-.imgBlock{
-  position: fixed;
-  z-index: -99999;
-}
-
-.block{
-  margin-top: 730px;
-  background: #FFFFFF;
-}
-
-
 </style>

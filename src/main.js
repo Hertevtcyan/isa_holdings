@@ -7,7 +7,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import VueCollapsiblePanel from '@dafcoe/vue-collapsible-panel'
 
-
 const app = createApp(App);
 app.AOS = new AOS.init({ disable: "phone" });
 app.use(VueCollapsiblePanel)

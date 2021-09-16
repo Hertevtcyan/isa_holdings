@@ -16,7 +16,6 @@ export default {
 
 <style scoped>
 .HeaderNews{
-  margin-top: -730px;
   background: url('../../assets/icons/bildings.png');
   background-repeat: no-repeat;
   background-size: cover;
