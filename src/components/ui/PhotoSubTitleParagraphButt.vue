@@ -91,7 +91,7 @@ export default {
 .help-busines {
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.08);
-  width: 716px;
+  // width: 716px;
   margin-top: 82px;
 }
 

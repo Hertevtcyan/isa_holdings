@@ -13,7 +13,7 @@
         items-center
       "
     >
-      <div class="corporate">
+      <div :class="{active: showCorporateBlock}" class="corporate">
         <div class="btn" @click="showCorporate">
           <TextRedLine
             subTitle="Corporate"
@@ -21,7 +21,7 @@
           />
         </div>
       </div>
-      <div class="media">
+      <div :class="{active: showMediaBlock}" class="media">
         <div class="btn" @click="showMedia">
           <TextRedLine
             subTitle="Media Kit"
@@ -36,7 +36,7 @@
       </div>
       <MobileManager />
       <div class="container mx-auto">
-        <FirstSlider />
+        <LastSlider />
       </div>
       <FirstFooter/>
     </div>
@@ -53,6 +53,7 @@
 import NewsMediaMainPhoto from "./NewsMediaModules/NewsMediaMainPhoto.vue";
 import TextRedLine from "@/components/ui/TextRedLine.vue";
 import FirstSlider from "./Corporate/FirstSLider.vue";
+import LastSlider from "./Corporate/LastSlider.vue";
 import DownloadBrands from "./MediaDownload/DownloadBrands.vue";
 import MobileManager from "./Corporate/MobileManager.vue";
 import FirstFooter from './Corporate/FirstFooter.vue'
@@ -61,6 +62,7 @@ export default {
     NewsMediaMainPhoto,
     TextRedLine,
     FirstSlider,
+    LastSlider,
     DownloadBrands,
     MobileManager,
     FirstFooter
@@ -95,5 +97,8 @@ export default {
 .btn {
   max-width: 626px;
   cursor: pointer;
+}
+.active {
+  opacity: 0.2;
 }
 </style>

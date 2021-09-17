@@ -33,3 +33,14 @@ export default {
   components: { PhotoSubTitleParagraphButt },
 };
 </script>
+
+<style scoped>
+.helping-left, .helping-rigth{
+  width: 716px;
+}
+@media screen and (max-width: 1487px) {
+ .helping-left, .helping-rigth{
+  width: 716px;
+}
+}
+</style>
