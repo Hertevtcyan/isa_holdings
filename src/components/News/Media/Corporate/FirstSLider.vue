@@ -124,7 +124,7 @@ export default {
 };
 </script> 
  
-<style scoped>
+<style scoped lang="scss">
 .gallerySlid > div {
   width: 100px;
   height: 100px;
@@ -187,4 +187,15 @@ export default {
   box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
   padding: 8px 16px 8px 16px;
 }
+@media only screen and (max-width: 767px) {
+  .bgActiveGallery{
+      width: 100%;
+  }
+  .gallerySlid {
+    div {
+      width: 170px;
+      height: 108px;
+    }
+  }
+  }
 </style>

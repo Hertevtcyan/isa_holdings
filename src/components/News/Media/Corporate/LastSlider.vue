@@ -180,11 +180,22 @@ export default {
   box-sizing: border-box;
   backdrop-filter: blur(1px);
 }
-.slack-rigth, .slack-left {
+.slack-rigth,
+.slack-left {
   width: 48px;
   height: 48px;
   background: #148aae;
   box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
   padding: 8px 16px 8px 16px;
 }
+/* @media only screen and (max-width: 1279px) {
+  .bgActiveGallery {
+    margin-top: -32px;
+  }
+} */
+/* @media only screen and (max-width: 480px) {
+  .bgActiveGallery {
+    margin-top: -32px;
+  }
+} */
 </style>

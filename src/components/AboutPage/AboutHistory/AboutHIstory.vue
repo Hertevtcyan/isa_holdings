@@ -38,9 +38,7 @@ export default {
 
 <style scoped lang="scss">
 
-.container-bg {
-  background: #e5e5e5;
-}
+
 .upstream {
   margin-top: -130px;
 }

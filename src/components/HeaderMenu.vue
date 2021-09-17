@@ -5,7 +5,10 @@
         <div class="flex justify-between items-center">
           <div class="flex">
             <div class="relative">
-              <img src="../assets/icons/logo.svg" >
+              <router-link to="/">
+<img src="../assets/icons/logo.svg" >
+              </router-link>
+              
             </div>
           </div>
 
