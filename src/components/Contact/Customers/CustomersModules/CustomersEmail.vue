@@ -41,7 +41,7 @@
         v-model="number"
         class="input"
         placeholder="Mobile Number"
-        type="number"
+        type="tel"
       />
       
       <input type="submit" value="Send" class="btn-send" />
