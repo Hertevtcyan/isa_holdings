@@ -1,5 +1,5 @@
 <template>
-  <div class="help-busines">
+  <div class="help-busines" :class="`${$props.componentName}`">
     <div v-if="$props.image" class="img_div">
       <base-image v-if="$props.image" v-bind="$props.image" />
       <img
@@ -31,6 +31,9 @@ export default {
     BaseImage,
   },
   props: {
+    componentName: {
+      type: String,
+    },
     subTitle: {
       type: String,
       required: false,
@@ -163,9 +166,40 @@ img {
     h2 {
       padding-top: 40px;
     }
-    p{
+    p {
       line-height: 36px;
       padding-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .managment-apoarch {
+    .img_div {
+      // width: 385px;
+      height: 409px;
+      img {
+        // width: 385px;
+        height: 409px;
+      }
+    }
+    .help-busines-text-butt {
+      h2 {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.05em;
+        padding-bottom: 12px;
+      }
+      p{
+        font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 38px;
+      }
     }
   }
 }

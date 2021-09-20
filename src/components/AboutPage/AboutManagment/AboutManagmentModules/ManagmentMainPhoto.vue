@@ -6,6 +6,7 @@
     </div>
     <div>
              <PhotoSubTitleParagraphButt
+             componentName="managment-apoarch"
                   sub-title="Helping a space business reach for the stars"
                   paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
                   :showButton="true"
@@ -35,7 +36,7 @@ export default {
   width: 716px;
   .approach-risk {
     background: #ffffff;
-    border: 1px solid #1d3557;
+
     box-sizing: border-box;
     box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
     width: 411px;
@@ -97,14 +98,14 @@ export default {
     width: 592px;
   }
 }
-// @media screen and (max-width: 1279px) {
-//  .managment-main-photo{
-//    width: 300px;
-//     margin-top: 82px;
-//  }
-//  .approach-risk{
-//    margin-left: 100%;
-//  }
-// }
+@media screen and (max-width: 1024px){
+  .approach-risk{
+  
+    width: 277px!important;
+    height: 162px!important;
+    margin-left: calc(100% - 277px)!important;
+  }
+}
+
 
 </style>

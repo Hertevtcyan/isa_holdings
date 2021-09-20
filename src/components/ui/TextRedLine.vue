@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="`${$props.componentStyle}`">
     <h2 :class="`${$props.colorSubtitle}`">{{ $props.subTitle }}</h2>
     <div class="line"></div>
     <p :class="`${$props.colorText}`">
@@ -20,6 +20,9 @@
 <script>
 export default {
   props: {
+    componentStyle: {
+      type: String,
+    },
     subTitle: {
       type: String,
       required: false,
@@ -44,8 +47,8 @@ export default {
       type: String,
     },
     colorText: {
-      type: String
-    }
+      type: String,
+    },
   },
 };
 </script>
@@ -81,13 +84,13 @@ p {
   color: #1d3557;
 }
 
-.textColor{
+.textColor {
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 42px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 90%;
 }
 .line {
@@ -98,36 +101,52 @@ p {
 .career-first-footer-h {
   font-size: 46px;
 }
-
-@media screen and (max-width: 1024px) {
-  p{
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
 @media screen and (max-width: 1487px) {
-  p{
-   margin-top: 24px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  padding-bottom: 24px;
-  color: #1d3557;
+  p {
+    margin-top: 24px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 24px;
+    color: #1d3557;
   }
 }
 @media screen and (max-width: 1279px) {
-  p{
-   margin-top: 24px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  padding-bottom: 24px;
-  color: #1d3557;
+  p {
+    margin-top: 24px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 24px;
+    color: #1d3557;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .Managment-tain-text{
+    width: 358px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Our-purpose {
+    width: 100%;
+    .change-size div:first-child {
+      width: 100%;
+    }
+    .line {
+      width: 157px;
+    }
+  }
+  .Managment-tain-text{
+    width: 100%;
+  }
+}
 </style>
+

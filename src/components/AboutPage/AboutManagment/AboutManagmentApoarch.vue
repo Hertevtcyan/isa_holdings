@@ -32,5 +32,10 @@ export default {
 .my-container{
     margin-top: 56px;
 }  
+@media screen and (max-width: 767px){
+  .my-container{
+    flex-direction: column;
+  }
+}
 
 </style>

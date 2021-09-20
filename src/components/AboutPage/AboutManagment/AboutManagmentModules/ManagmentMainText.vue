@@ -5,6 +5,7 @@
           v-for="(data, index) in content"
           :key='index'
           v-bind="data"
+          componentStyle="Managment-tain-text"
         />
       </div>
   </div>
@@ -38,9 +39,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-  
   .managment-text {
     max-width: 626px;
   }
+ 
 </style>
