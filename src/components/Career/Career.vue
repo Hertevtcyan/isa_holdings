@@ -2,7 +2,7 @@
   <div>
     <CareerMainPhoto />
     <IsaHolding />
-    <div class="container flex mx-auto justify-between">
+    <div class="my-container container flex mx-auto justify-between">
       <div class="text">
         <JoinUseText />
       </div>
@@ -27,14 +27,6 @@
   </div>
 </template>
 
-<style scoped>
-.zayn {
-  margin-top: 101px;
-}
-.emp-block{
-  margin-top: 116px;
-}
-</style>
 
 
 <script>
@@ -60,6 +52,24 @@ export default {
 };
 </script>
 
+
+<style scoped>
+.zayn {
+  margin-top: 101px;
+}
+.emp-block{
+  margin-top: 116px;
+}
+@media screen and (max-width: 767px){
+.my-container {
+  flex-direction: column-reverse;
+}
+.zayn {
+  flex-direction: column;
+}
+}
+
+</style>
 
 
 

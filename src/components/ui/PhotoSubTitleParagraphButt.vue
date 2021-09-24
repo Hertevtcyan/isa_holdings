@@ -128,7 +128,7 @@ export default {
 img {
   width: 100%;
   position: absolute;
-  height: 543px;
+  // height: 543px;
 }
 
 .help-busines-text-butt {
@@ -160,6 +160,11 @@ img {
     padding-bottom: 138px;
   }
 }
+@media screen and (max-width: 1488px) {
+ .helping-left, .helping-rigth {
+   width: 500px!important;
+ }
+}
 
 @media screen and (max-width: 1279px) {
   .help-busines-text-butt {
@@ -171,6 +176,10 @@ img {
       padding-bottom: 100px;
     }
   }
+ .contact-customer {
+   
+ }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -193,12 +202,12 @@ img {
         letter-spacing: 0.05em;
         padding-bottom: 12px;
       }
-      p{
+      p {
         font-family: Rubik;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 38px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 38px;
       }
     }
   }

@@ -22,8 +22,6 @@
         class="input"
         placeholder="Type of enquiry"
         type="text"
-  
-        
       />
       <input
         v-model="email"
@@ -43,7 +41,7 @@
         placeholder="Mobile Number"
         type="tel"
       />
-      
+
       <input type="submit" value="Send" class="btn-send" />
     </form>
   </div>
@@ -65,7 +63,6 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      
       emailjs
         .sendForm(
           "service_vtvx1q9",
@@ -122,8 +119,9 @@ export default {
     }
   }
   .contact-form {
+    width: 100%;
     .input {
-      width: 593px;
+      width: 100%;
       border-bottom: 1px solid #10223d;
       margin-top: 55px;
       opacity: 0.5;
@@ -155,5 +153,33 @@ export default {
       border-bottom: 1px solid red;
     }
   }
+}
+@media screen and (max-width: 1279px) {
+  .my-container {
+    width: 400px;
+    .massage {
+      h2 {
+        font-size: 52px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+    .my-container{
+    width: 328px;
+    .massage {
+      h2 {
+        font-size: 35px;
+        line-height: 5px;
+      }
+    }
+    }
+}
+@media screen and (max-width: 767px){
+  .my-container{
+    width: 100%;
+    margin-top: 33px;
+    }
 }
 </style>

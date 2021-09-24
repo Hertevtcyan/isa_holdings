@@ -1,6 +1,6 @@
 <template>
   <div :class="`corporate-container-bg__${$props.img}`">
-    <div class="container flex mx-auto justify-between corporate">
+    <!-- <div class="container flex mx-auto justify-between corporate">
       <div class="corporate-text-wrapper-my" v-if="!mySetings">
         <div class="container-wrapp">
           <h2>{{ properties.title }}</h2>
@@ -50,6 +50,35 @@
           >View More</read-more-button
         >
       </div>
+    </div> -->
+
+    <div class="my-block">
+      <div class="my-bg-color"></div>
+      <div class="my-container container mx-auto">
+        <div class="main-bg-text">
+          <TextRedLine
+            v-if="$props.img === 'history'"
+            componentStyle="history-first-footer"
+            colorSubtitle="career-first-footer-h"
+            subTitle="Corporate Social Responsibility"
+            paragraph="
+Enriching Communities program was launched in 2018, to affirm the Group’s commitment to CSR and helping local and international communities. CSR is embedded in the organization’s culture, as we continue to launch initiatives to support the UAE leadership’s vision and contribute to the economic development while improving the quality of life of our society, customers, partners, and employees"
+          />
+          <TextRedLine
+            v-else-if="$props.img === 'mission'"
+            componentStyle="history-first-footer"
+            colorSubtitle="career-first-footer-h"
+            :showParagraphSecond="true"
+            subTitle="Our Code of Business Conduct and Ethics"
+            paragraph="
+The success of the firm is determined not solely by the deals we make or clients we acquire, but also by the everyday actions and behaviors of our most critical asset: our people."
+           paragraphSecond="That’s why we’ve designed a Code of Conduct to empower our people to show up for the firm, our clients, and each other with integrity – and, as a result, continue to drive the business forward."
+          />
+          <div class="btnb">
+            <ReadMoreButton type="transparentView"> Join Now </ReadMoreButton>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -94,14 +123,36 @@ export default {
 
 
 
-<style scoped>
+<style scoped lang="scss">
 .corporate-container-bg__history {
   background-image: url("../../assets/about/aboutHistory/corporateMainPhoto.png");
   width: 100%;
   height: 720px;
-  padding-top: 65px;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: -5;
+  .my-block {
+    .my-bg-color {
+      width: 1061px;
+      height: 720px;
+      background: #1d3557;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: -3;
+    }
+    .my-container {
+      .main-bg-text {
+        width: 767px;
+        padding-top: 65px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
 }
 .corporate-container-bg__strategy {
   background-image: url("../../assets/about/aboutHistory/strategy_footer.png");
@@ -115,9 +166,32 @@ export default {
   background-image: url("../../assets/about/aboutValues/ourCode.png");
   width: 100%;
   height: 720px;
-  padding-top: 65px;
+  // padding-top: 65px;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -5;
+  .my-block {
+    .my-bg-color {
+      width: 60vw;
+      height: 720px;
+      background: #7c7287;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: 1;
+    }
+    .my-container {
+      z-index: 4;
+      .main-bg-text {
+        width: 767px;
+        padding-top: 65px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
 }
 .corporate-container-bg__media {
   background-image: url("../../assets/news/media/firstFooterPhone.png");
@@ -135,7 +209,89 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.view {
+
+
+
+@media only screen and (max-width: 1487px){
+
+.corporate-container-bg__mission {
+  .my-block {
+    .my-bg-color {
+      // width: 930px;
+      height: 720px;
+      background: #7c7287;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: 1;
+    }
+    .my-container {
+      z-index: 4;
+      .main-bg-text {
+        width: 600px;
+        padding-top: 65px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
+ .corporate-container-bg__mission {
+  .my-block {
+    .my-bg-color {
+      // width: 800px;
+      height: 720px;
+      background: #7c7287;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: 1;
+    }
+    .my-container {
+      z-index: 4;
+      .main-bg-text {
+        width: 600px;
+        padding-top: 65px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
+}
+@media only screen and (max-width: 1487px){
+  .corporate-container-bg__mission {
+  .my-block {
+    .my-bg-color {
+      // width: 800px;
+      height: 720px;
+      background: #7c7287;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: 1;
+    }
+    .my-container {
+      z-index: 4;
+      .main-bg-text {
+        width: 500px;
+        padding-top: 65px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
+}
+
+
+/* .view {
   border: 1px solid #ffffff;
   box-sizing: border-box;
   backdrop-filter: blur(1px);
@@ -226,6 +382,5 @@ p {
 }
 .button-join {
   margin-left: 60%;
-}
-
+} */
 </style>

@@ -48,7 +48,13 @@ export default {
 .btn__transparentView{
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px); */
+  font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+color: #FFFFFF;
 }
 
 .btn__text{

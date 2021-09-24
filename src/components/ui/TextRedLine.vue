@@ -101,6 +101,26 @@ p {
 .career-first-footer-h {
   font-size: 46px;
 }
+.history-first-footer {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: #ffffff;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #ffffff;
+  }
+}
+
 @media screen and (max-width: 1487px) {
   p {
     margin-top: 24px;
@@ -111,6 +131,17 @@ p {
     line-height: 36px;
     padding-bottom: 24px;
     color: #1d3557;
+  }
+  .history-first-footer {
+    p {
+      margin-top: 24px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 24px;
+    }
   }
 }
 @media screen and (max-width: 1279px) {
@@ -124,14 +155,93 @@ p {
     padding-bottom: 24px;
     color: #1d3557;
   }
+  .history-first-footer {
+    p {
+      margin-top: 24px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 24px;
+    }
+  }
+  .Managment-tain-text {
+    max-width: 500px;
+  }
+  .career-join-us {
+    max-width: 500px;
+  }
+  .zayn-text {
+    max-width: 410px;
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      /* identical to box height */
+
+      letter-spacing: 0.05em;
+
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #1d3557;
+    }
+  }
 }
 @media screen and (max-width: 1024px) {
+  .Managment-tain-text {
+    width: 358px;
+    .line {
+      width: 157px;
+    }
+  }
   p {
     font-size: 20px;
     line-height: 28px;
   }
-  .Managment-tain-text{
-    width: 358px;
+  .career-join-us {
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 38px;
+      color: #1d3557;
+    }
+  }
+  .zayn-text {
+    .card {
+      max-width: 700px;
+    }
+
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.05em;
+
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #1d3557;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -144,8 +254,19 @@ p {
       width: 157px;
     }
   }
-  .Managment-tain-text{
+  .Managment-tain-text {
     width: 100%;
+    margin-top: 48px;
+    .line {
+      width: 157px;
+    }
+  }
+  .career-join-us {
+    max-width: 100%;
+  }
+  .zayn-text {
+    max-width: 100%;
+    
   }
 }
 </style>

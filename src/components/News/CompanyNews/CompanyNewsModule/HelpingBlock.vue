@@ -2,6 +2,7 @@
   <div class="flex container justify-between mx-auto">
     <div class="helping-left">
       <PhotoSubTitleParagraphButt
+        componentName="news-company"
         sub-title="Helping a space business reach for the stars"
         paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
         :showButton="true"
@@ -14,6 +15,7 @@
     </div>
     <div class="helping-rigth">
       <PhotoSubTitleParagraphButt
+        componentName="news-company"
         sub-title="Helping a space business reach for the stars"
         paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
         :showButton="true"
@@ -35,12 +37,14 @@ export default {
 </script>
 
 <style scoped>
-.helping-left, .helping-rigth{
+.helping-left,
+.helping-rigth {
   width: 716px;
 }
 @media screen and (max-width: 1487px) {
- .helping-left, .helping-rigth{
-  width: 716px;
-}
+  .helping-left,
+  .helping-rigth {
+    width: 716px;
+  }
 }
 </style>
