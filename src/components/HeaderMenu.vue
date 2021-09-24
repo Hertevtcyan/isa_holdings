@@ -22,7 +22,7 @@
                 <div v-if="isOpen1" class="absolute z-30 right-0 mt-2" :class="{'hidden': !isOpen1}">
                   <div class="bg-white rounded-lg shadow-lg py-2 w-48">
                     <router-link to="/about/history" class="block text-purple-600 font-semibold px-4 py-2 | hover:font-bold">History</router-link>
-                    <a href="#" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Strategy</a>
+                    <router-link to="/about/strategy" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Strategy</router-link>
                     <router-link to="/about/values" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Vision and Values</router-link>
                     <router-link to="/about/managment" class="block text-purple-600 font-semibold px-4 py-2 | hover:text-white">Managment Apoarch</router-link>
                   </div>

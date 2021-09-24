@@ -11,7 +11,7 @@
     <p v-if="paragraph3" :class="`${$props.colorText}`">
       {{ $props.paragraph3 }}
     </p>
-    <p v-if="showParagraphSecond" :class="`${$props.colorText}`">
+    <p class="p-sec" v-if="showParagraphSecond" :class="`${$props.colorText}`">
       {{ $props.paragraphSecond }}
     </p>
   </div>
@@ -101,13 +101,13 @@ p {
 .career-first-footer-h {
   font-size: 46px;
 }
-.history-first-footer {
+.mission {
   h2 {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
-    line-height: 57px;
+    font-size: 2.5vw;
+    line-height: 3vw;
     color: #ffffff;
   }
   p {
@@ -116,6 +116,30 @@ p {
     font-weight: 300;
     font-size: 28px;
     line-height: 42px;
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    color: #ffffff;
+  }
+}
+.media {
+  margin-bottom: 62px;
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    /* or 150% */
 
     color: #ffffff;
   }
@@ -161,8 +185,8 @@ p {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 20px;
       padding-bottom: 24px;
     }
   }
@@ -194,6 +218,29 @@ p {
       line-height: 24px;
 
       color: #1d3557;
+    }
+  }
+  .mission {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+    .p-sec {
+      margin-top: 10px;
     }
   }
 }
@@ -243,6 +290,31 @@ p {
       color: #1d3557;
     }
   }
+  .mission {
+    .line {
+      width: 157px;
+    }
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 25px;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 18px;
+      color: #ffffff;
+    }
+    .p-sec {
+      margin-top: -10px;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .Our-purpose {
@@ -266,7 +338,49 @@ p {
   }
   .zayn-text {
     max-width: 100%;
-    
+  }
+  .mission {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 6vw;
+      line-height: 6vw;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 3vw;
+      line-height: 4vw;
+      color: #ffffff;
+    }
+    .p-sec {
+      margin-top: -10px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .mission {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
   }
 }
 </style>

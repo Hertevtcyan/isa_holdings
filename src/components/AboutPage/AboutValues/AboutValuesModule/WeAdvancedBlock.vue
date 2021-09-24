@@ -61,5 +61,31 @@
     }
   }
 }
+@media screen and (max-width: 1024px){
+   .my-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+        margin-top: -30px;
+    p{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .my-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+        margin-top: -20px;
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
 </style>
 

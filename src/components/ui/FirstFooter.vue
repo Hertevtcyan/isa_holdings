@@ -1,57 +1,5 @@
 <template>
   <div :class="`corporate-container-bg__${$props.img}`">
-    <!-- <div class="container flex mx-auto justify-between corporate">
-      <div class="corporate-text-wrapper-my" v-if="!mySetings">
-        <div class="container-wrapp">
-          <h2>{{ properties.title }}</h2>
-          <div class="line"></div>
-          <p>
-            {{ properties.text }}
-          </p>
-          <p v-if="properties.textTwo !== ''">
-            {{ properties.textTwo }}
-          </p>
-          <read-more-button v-if="button" type="transparent" class="view"
-            >View More</read-more-button
-          >
-        </div>
-        <div class="explore-bl">
-          <div class="exp-main-bl mx-auto">
-          <TextRedLine
-            colorSubtitle="career-first-footer-h"
-            subTitle="EXPLORE OUR VACANCIES"
-            paragraph="We are committed to enriching lives and we seek integrity, honesty, and transparency in our relationships. We strive to source the best local and international talent."
-          />
-          <div class="button-join">
-            <ReadMoreButton
-            type="read">
-            Join Now
-            </ReadMoreButton>
-        
-          </div>
-          </div>
-          
-        </div>
-      </div>
-      <div
-        v-else
-        class="corporate-text-wrapper"
-        :class="`corporate-text-wrapper__${$props.small}`"
-      >
-        <h2>{{ properties.title }}</h2>
-        <div class="line"></div>
-        <p>
-          {{ properties.text }}
-        </p>
-        <p v-if="properties.textTwo !== ''">
-          {{ properties.textTwo }}
-        </p>
-        <read-more-button v-if="button" type="transparent" class="view"
-          >View More</read-more-button
-        >
-      </div>
-    </div> -->
-
     <div class="my-block">
       <div class="my-bg-color"></div>
       <div class="my-container container mx-auto">
@@ -66,16 +14,37 @@ Enriching Communities program was launched in 2018, to affirm the Group’s comm
           />
           <TextRedLine
             v-else-if="$props.img === 'mission'"
-            componentStyle="history-first-footer"
+            componentStyle="mission"
             colorSubtitle="career-first-footer-h"
             :showParagraphSecond="true"
             subTitle="Our Code of Business Conduct and Ethics"
             paragraph="
 The success of the firm is determined not solely by the deals we make or clients we acquire, but also by the everyday actions and behaviors of our most critical asset: our people."
-           paragraphSecond="That’s why we’ve designed a Code of Conduct to empower our people to show up for the firm, our clients, and each other with integrity – and, as a result, continue to drive the business forward."
+            paragraphSecond="That’s why we’ve designed a Code of Conduct to empower our people to show up for the firm, our clients, and each other with integrity – and, as a result, continue to drive the business forward."
+          />
+          <TextRedLine
+            v-else-if="$props.img === 'media'"
+            componentStyle="mission"
+            colorSubtitle="career-first-footer-h"
+            :showParagraphSecond="true"
+            subTitle="Management Approach"
+            paragraph="The success of the firm is determined not solely by the deals we make or clients we acquire, but also by the everyday actions and behaviors of our most critical asset: our people."
           />
           <div class="btnb">
-            <ReadMoreButton type="transparentView"> Join Now </ReadMoreButton>
+            <ReadMoreButton
+              v-if="$props.img === 'history'"
+              templateStyle="history-vision"
+              type="transparentView"
+            >
+              Join Now
+            </ReadMoreButton>
+             <ReadMoreButton
+              v-else-if="$props.img === 'media'"
+              templateStyle="media"
+              type="transparentView"
+            >
+              Join Now
+            </ReadMoreButton>
           </div>
         </div>
       </div>
@@ -145,7 +114,7 @@ export default {
     .my-container {
       .main-bg-text {
         width: 767px;
-        padding-top: 65px;
+
         .btnb {
           margin-left: 69%;
           margin-top: 70px;
@@ -158,22 +127,21 @@ export default {
   background-image: url("../../assets/about/aboutHistory/strategy_footer.png");
   width: 100%;
   height: 720px;
-  padding-top: 65px;
+
   background-size: cover;
   background-repeat: no-repeat;
 }
 .corporate-container-bg__mission {
   background-image: url("../../assets/about/aboutValues/ourCode.png");
   width: 100%;
-  height: 720px;
-  // padding-top: 65px;
-  background-size: cover;
+  height: 37.2vw;
+  background-size: contain;
   background-repeat: no-repeat;
   z-index: -5;
   .my-block {
     .my-bg-color {
       width: 60vw;
-      height: 720px;
+      height: 37.2vw;
       background: #7c7287;
       opacity: 0.35;
       box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
@@ -184,10 +152,10 @@ export default {
       z-index: 4;
       .main-bg-text {
         width: 767px;
-        padding-top: 65px;
+
         .btnb {
           margin-left: 69%;
-          margin-top: 70px;
+          margin-top: 40px;
         }
       }
     }
@@ -196,191 +164,143 @@ export default {
 .corporate-container-bg__media {
   background-image: url("../../assets/news/media/firstFooterPhone.png");
   width: 100%;
-  height: 720px;
-  padding-top: 65px;
-  background-size: cover;
+  height: 37.2vw;
+  background-size: contain;
   background-repeat: no-repeat;
+  padding-top: 182px;
+  position: relative;
+  .my-block {
+    .my-bg-color {
+      width: 60vw;
+      height: 25vw;
+      background: #840032;
+      opacity: 0.35;
+      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+      position: absolute;
+      z-index: 1;
+      top: 118px;
+    }
+    .my-container {
+      z-index: 4;
+      .main-bg-text {
+        width: 767px;
+        .btnb {
+          margin-left: 69%;
+          margin-top: -40px;
+        }
+      }
+    }
+  }
 }
 .corporate-container-bg__career {
   background-image: url("../../assets/career/firstFooter.png");
   width: 100%;
   height: 720px;
-  padding-top: 65px;
+
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
-@media only screen and (max-width: 1487px){
-
-.corporate-container-bg__mission {
-  .my-block {
-    .my-bg-color {
-      // width: 930px;
-      height: 720px;
-      background: #7c7287;
-      opacity: 0.35;
-      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
-      position: absolute;
-      z-index: 1;
-    }
-    .my-container {
-      z-index: 4;
-      .main-bg-text {
-        width: 600px;
-        padding-top: 65px;
-        .btnb {
-          margin-left: 69%;
-          margin-top: 70px;
-        }
-      }
-    }
-  }
-}
- .corporate-container-bg__mission {
-  .my-block {
-    .my-bg-color {
-      // width: 800px;
-      height: 720px;
-      background: #7c7287;
-      opacity: 0.35;
-      box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
-      position: absolute;
-      z-index: 1;
-    }
-    .my-container {
-      z-index: 4;
-      .main-bg-text {
-        width: 600px;
-        padding-top: 65px;
-        .btnb {
-          margin-left: 69%;
-          margin-top: 70px;
-        }
-      }
-    }
-  }
-}
-}
-@media only screen and (max-width: 1487px){
+@media screen and (max-width: 1487px) {
   .corporate-container-bg__mission {
-  .my-block {
-    .my-bg-color {
-      // width: 800px;
-      height: 720px;
-      background: #7c7287;
+    .my-block {
+      .my-bg-color {
+        height: 37.2vw;
+        background: #7c7287;
+        opacity: 0.35;
+        box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+        position: absolute;
+        z-index: 1;
+      }
+      .my-container {
+        z-index: 4;
+        .main-bg-text {
+          width: 600px;
+          padding-top: 30px;
+          .btnb {
+            margin-left: calc(100% - 234px);
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .corporate-container-bg__media {
+    padding-top: 120px;
+    .my-block {
+      .my-bg-color {
+      width: 60vw;
+      height: 25vw;
+      background: #840032;
       opacity: 0.35;
       box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
       position: absolute;
       z-index: 1;
+      top: 118px;
     }
-    .my-container {
-      z-index: 4;
-      .main-bg-text {
-        width: 500px;
-        padding-top: 65px;
-        .btnb {
-          margin-left: 69%;
-          margin-top: 70px;
+      .my-container {
+        z-index: 4;
+        .main-bg-text {
+          width: 600px;
+          padding-top: 30px;
+          .btnb {
+            margin-left: calc(100% - 180px);
+            margin-top: -32px;
+          }
         }
       }
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .corporate-container-bg__mission {
+    .my-block {
+      .my-bg-color {
+        height: 37.2vw;
+        background: #7c7287;
+        opacity: 0.35;
+        box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+        position: absolute;
+        z-index: 1;
+      }
+      .my-container {
+        z-index: 4;
+        .main-bg-text {
+          width: 450px;
+          padding-top: 5px;
+          .btnb {
+            margin-left: calc(100% - 140px);
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 }
-
-
-/* .view {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  backdrop-filter: blur(1px);
-  width: 184px;
-  height: 73px;
-  color: #ffffff;
-  margin-top: 49px;
-  margin-left: 77%;
-  cursor: pointer;
+@media screen and (max-width: 767px) {
+  .corporate-container-bg__mission {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  .corporate-container-bg__mission {
+    padding-left: 20px;
+    padding-top: 20px;
+    .my-block {
+      .my-bg-color {
+        width: 94%;
+        height: 460px;
+      }
+      .my-container {
+        .main-bg-text {
+          width: 84vw;
+          padding-left: 20px;
+          .btnb {
+            left: 100px;
+          }
+        }
+      }
+    }
+  }
 }
-
-h2 {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 57px;
-  color: #ffffff;
-  padding-top: 50px;
-}
-p {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 42px;
-  color: #ffffff;
-  margin-top: 24px;
-}
-.line {
-  background: #c1121f;
-  width: 157px;
-  height: 4px;
-  margin-top: 24px;
-}
-
-.corporate-text-wrapper {
-  width: 60%;
-  margin-top: 90px;
-  height: 480px;
-}
-
-.corporate-text-wrapper__one {
-  background-color: #840032;
-  box-shadow: 4px 4px 20px #001315;
-  margin-top: 50px;
-  opacity: 0.5;
-  width: 80%;
-}
-.corporate-text-wrapper__career {
-  background-color: #840032;
-  box-shadow: 4px 4px 20px #001315;
-  margin-top: 50px;
-  opacity: 0.5;
-  width: 60%;
-}
-.left-block {
-  width: 300px;
-  height: 300px;
-  border: 1px solid;
-}
-
-.corporate-text-wrapper-my {
-  max-width: 592px;
-}
-.container-wrapp {
-  max-width: 893px;
-  background: #840032;
-  opacity: 0.35;
-  box-shadow: 4px 4px 20px #000000;
-  height: 480px;
-}
-.corporate {
-  position: relative;
-}
-.explore-bl {
-  width: 716px;
-  height: 506px;
-  background: #ffffff;
-  position: absolute;
-  right: 0;
-  top: 206px;
-  filter: drop-shadow(4px 16px 25px rgba(29, 53, 87, 0.1));
-}
-.exp-main-bl {
-  max-width: 592px;
-  margin-top: 62px;
-}
-.button-join {
-  margin-left: 60%;
-} */
 </style>

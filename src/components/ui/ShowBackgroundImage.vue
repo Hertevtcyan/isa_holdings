@@ -1,94 +1,93 @@
 <template>
-    <div class="about-container" :class="`about-container__${$props.img}`">
-      <div class="shadow-block flex items-center">
-        <div class="container mx-auto">
-          <div class="who-we-ae">
-            <h1 class="text-white">{{ text.title }}</h1>
-            <div class="line"></div>
-            <p>{{ text.text }}</p>
-          </div>
+  <div class="about-container" :class="`about-container__${$props.img}`">
+    <div class="shadow-block flex items-center">
+      <div class="container mx-auto">
+        <div class="who-we-ae">
+          <h1 class="text-white">{{ text.title }}</h1>
+          <div class="line"></div>
+          <p>{{ text.text }}</p>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    text:{
-      type: Object
+    text: {
+      type: Object,
     },
-    img:{
+    img: {
       type: String,
-      validator: (type)=>
-          [
-            'history',
-            'mission',
-            'strategy',
-            'management',
-            'OurCompanies',
-            'companyNews',
-            'media',
-            'career'
-          ].includes(type),
-    }
-    }
-  }
+      validator: (type) =>
+        [
+          "history",
+          "mission",
+          "strategy",
+          "management",
+          "OurCompanies",
+          "companyNews",
+          "media",
+          "career",
+        ].includes(type),
+    },
+  },
+};
 </script>
 
 
 <style scoped lang="scss">
-
-.line{
+.line {
   background: #c1121f;
   width: 157px;
   height: 4px;
 }
 
-.about-container{
+.about-container {
   width: 100%;
-  height: 720px;
+  height: 37.5vw;
 }
 
-.about-container__history{
+.about-container__history {
   background: url("../../assets/about/aboutHistory/history.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.about-container__mission{
+.about-container__mission {
   background: url("../../assets/about/aboutHistory/mission.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
-.about-container__strategy{
+.about-container__strategy {
   background: url("../../assets/about/aboutHistory/strategy.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about-container__management{
+.about-container__management {
   background: url("../../assets/about/aboutHistory/management.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-container__OurCompanies{
+.about-container__OurCompanies {
   background: url("../../assets/OurCompanies/OurCompaniesMain.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-container__companyNews{
+.about-container__companyNews {
   background: url("../../assets/news/companyNews/companyNews.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-container__media{
+.about-container__media {
   background: url("../../assets/news/media/mediaMainPhoto.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-container__career{
+.about-container__career {
   background: url("../../assets/career/careerMain.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,37 +97,35 @@ p {
   color: $colorText;
 }
 .about-container {
-
-
-.shadow-block {
-  background: linear-gradient(
+  .shadow-block {
+    background: linear-gradient(
       278.22deg,
       rgba(229, 252, 255, 0) -6.14%,
-        rgba(0,0,0, 0.55) 97.78%,
+      rgba(0, 0, 0, 0.55) 97.78%
     );
 
-// mix-blend-mode: multiply;
-// opacity: 0.55;
-  width: 100%;
-  height: 720px;
-}
+    // mix-blend-mode: multiply;
+    // opacity: 0.55;
+    width: 100%;
+    height: 37.5vw;
+  }
 }
 // .blue-history {
-   //   background: #10223d;
-   //   width: 100%;
-   //   height: 41px;
+//   background: #10223d;
+//   width: 100%;
+//   height: 41px;
 
 //   p {
-     //     font-family: Rubik;
-     //     font-size: 18px;
-     //     color: $colorText;
-     //     margin-right: 11px;
-     //   }
+//     font-family: Rubik;
+//     font-size: 18px;
+//     color: $colorText;
+//     margin-right: 11px;
+//   }
 //   img {
-     //     padding-right: 11px;
-     //     //   widows: 13px;
-     //     //   height: 13px;
-     //   }
+//     padding-right: 11px;
+//     //   widows: 13px;
+//     //   height: 13px;
+//   }
 // }
 .path-history {
   border: 13px solid transparent;
@@ -136,17 +133,86 @@ p {
 }
 .who-we-ae {
   max-width: 592px;
-h1 {
-  color: $colorText;
-  font-size: 66px;
+  h1 {
+    color: $colorText;
+    font-size: 66px;
+  }
+  p {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 300;
+  }
 }
-p {
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: 300;
+@media screen and (max-width: 1279px){
+  .about-container__mission {
+    h1 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 42px;
+      line-height: 48px;
+      color: #ffffff;
+      text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.05);
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      /* or 190% */
+
+      color: #ffffff;
+
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
+@media screen and (max-width: 1024px) {
+  .about-container__mission {
+    h1 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 45px;
+      color: #ffffff;
+      text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.05);
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 38px;
+      /* or 190% */
+
+      color: #ffffff;
+
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
-
-
-
+@media screen and (max-width: 767px){
+  .about-container__mission {
+    h1 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 38px;
+      color: #ffffff;
+      text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.05);
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 34px;
+      color: #ffffff;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
 </style>
