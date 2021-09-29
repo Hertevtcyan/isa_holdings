@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-center">
-    <div class="container mx-auto my-container">
+    <div class="container mx-auto my-container flex items-center">
       <p>
-        ISA HOLDING is one of the world’s leading international companies.
-        Whether you are looking for a first job or taking the next step in your
-        career, we offer many ways for you to realise your ambitions.
+        We advance sustainable economic growth and financial opportunity. Our
+        purpose comes to life through our four core values: Client Service,
+        Excellence, Integrity, and Partnership.
       </p>
     </div>
   </div>
@@ -12,11 +12,15 @@
 
 <style scoped lang="scss">
 .my-container {
-  height: 188px;
-  background: #1D3557;
-box-shadow: 4px 16px 25px rgba(29, 53, 87, 0.2);
+  // height: 188px;
+  background: #148aae;
+  box-shadow: 4px 16px 25px rgba(29, 53, 87, 0.2);
   margin-top: -120px;
-  padding: 215 31 215 31;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   p {
     font-family: Rubik;
     font-style: normal;
@@ -25,9 +29,62 @@ box-shadow: 4px 16px 25px rgba(29, 53, 87, 0.2);
     line-height: 42px;
     text-align: center;
     color: #ffffff;
-    padding-left: 215px;
-    padding-right: 215px;
-    padding-top: 31px;
+    // padding-left: 215px;
+    // padding-right: 215px;
+    // padding-top: 31px;
+  }
+}
+@media screen and (max-width: 1487px) {
+  .my-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+        margin-bottom: -70px;
+    p{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1274px) {
+  .my-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+        margin-bottom: -70px;
+    p{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+   .my-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+        margin-top: -30px;
+    p{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .my-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+        margin-top: -20px;
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
 </style>

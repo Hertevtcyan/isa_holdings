@@ -165,7 +165,7 @@ export default {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
+  /* background-clip: padding-box; */
 }
 
 

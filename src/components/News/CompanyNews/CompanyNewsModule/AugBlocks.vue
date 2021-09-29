@@ -18,32 +18,45 @@
         </div>
       </div>
     </div>
-    <div class="container flex justify-between mx-auto">
+
+    <div class="my-car-animal-cont container flex justify-between mx-auto">
       <div class="animal">
         <PhotoSubTitleParagraphButt
-          sub-title="Helping a space business reach for the stars"
-          paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-          :showButton="true"
-          :showYoutubeIcon="false"
-          textBlockBackground="color1"
-          :image="{
-            src: 'news/companyNews/animal.png',
-            alt: 'sdfsdfsdsdf',
-          }"
-        />
+        componentName="news-company"
+        :showYoutubeButt="true"
+        :button="{
+          text: 'Read More',
+          type: 'text',
+          templateStyle: 'news-company-btn',
+        }"
+        :text="{
+          h2: 'Helping a space business reach for the stars',
+          p: 'We’ve financed a space electronics inventor to bring satellite technology to market.',
+        }"
+        :image="{
+          src: 'news/companyNews/animal.png',
+          alt: 'sdfsdfsdsdf',
+        }"
+      />
       </div>
       <div class="lambo">
-          <PhotoSubTitleParagraphButt
-          sub-title="Helping a space business reach for the stars"
-          paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-          :showButton="true"
-          :showYoutubeIcon="true"
-          textBlockBackground="color2"
-          :image="{
-            src: 'news/companyNews/lamboo.png',
-            alt: 'sdfsdfsdsdf',
-          }"
-        />
+        <PhotoSubTitleParagraphButt
+        componentName="news-company"
+        :showYoutubeButt="true"
+        :button="{
+          text: 'Read More',
+          type: 'text',
+          templateStyle: 'news-company-btn',
+        }"
+        :text="{
+          h2: 'Helping a space business reach for the stars',
+          p: 'We’ve financed a space electronics inventor to bring satellite technology to market.',
+        }"
+        :image="{
+          src: 'news/companyNews/lamboo.png',
+          alt: 'sdfsdfsdsdf',
+        }"
+      />
       </div>
     </div>
   </div>
@@ -62,8 +75,11 @@ export default {
 
 
 <style scoped lang="scss">
-.ttyy{
-      padding-bottom: 62px;
+.animal, .lambo {
+  width: 48.1%;
+}
+.ttyy {
+  padding-bottom: 62px;
 }
 .bg-blue {
   width: 716px;
@@ -104,5 +120,16 @@ export default {
 }
 .notebook {
   margin-top: 56px;
+}
+@media screen and (max-width: 767px) {
+  .my-car-animal-cont {
+    flex-direction: column;
+  }
+  .animal, .lambo {
+    width: 100%;
+  }
+  .lambo {
+    margin-top: 25px;
+  }
 }
 </style>

@@ -1,12 +1,18 @@
 <template>
-  <div class="flex container justify-between mx-auto">
+  <div class="my-block flex container justify-between mx-auto">
     <div class="helping-left">
       <PhotoSubTitleParagraphButt
         componentName="news-company"
-        sub-title="Helping a space business reach for the stars"
-        paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-        :showButton="true"
-        :showYoutubeIcon="true"
+        :showYoutubeButt="true"
+        :button="{
+          text: 'Read More',
+          type: 'text',
+          templateStyle: 'news-company-btn',
+        }"
+        :text="{
+          h2: 'Helping a space business reach for the stars',
+          p: 'We’ve financed a space electronics inventor to bring satellite technology to market.',
+        }"
         :image="{
           src: 'news/companyNews/helpingLeft.png',
           alt: 'sdfsdfsdsdf',
@@ -16,10 +22,16 @@
     <div class="helping-rigth">
       <PhotoSubTitleParagraphButt
         componentName="news-company"
-        sub-title="Helping a space business reach for the stars"
-        paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-        :showButton="true"
-        :showYoutubeIcon="true"
+        :showYoutubeButt="true"
+        :button="{
+          text: 'Read More',
+          type: 'text',
+          templateStyle: 'news-company-btn',
+        }"
+        :text="{
+          h2: 'Helping a space business reach for the stars',
+          p: 'We’ve financed a space electronics inventor to bring satellite technology to market.',
+        }"
         :image="{
           src: 'news/companyNews/helpingRigth.png',
           alt: 'sdfsdfsdsdf',
@@ -39,12 +51,18 @@ export default {
 <style scoped>
 .helping-left,
 .helping-rigth {
-  width: 716px;
+  width: 48.1%;
 }
-@media screen and (max-width: 1487px) {
+@media screen and (max-width: 767px) {
+  .my-block {
+    flex-direction: column;
+  }
   .helping-left,
   .helping-rigth {
-    width: 716px;
+    width: 100%;
+  }
+  .helping-rigth {
+    margin-top: 25px;
   }
 }
 </style>

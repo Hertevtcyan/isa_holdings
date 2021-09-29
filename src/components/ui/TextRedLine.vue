@@ -127,10 +127,8 @@ p {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
-    line-height: 57px;
-    /* identical to box height */
-
+    font-size: 2.5vw;
+    line-height: 3vw;
     color: #ffffff;
   }
   p {
@@ -139,12 +137,65 @@ p {
     font-weight: 300;
     font-size: 28px;
     line-height: 42px;
-    /* or 150% */
-
+    font-size: 1.5vw;
+    line-height: 2.2vw;
     color: #ffffff;
   }
 }
-
+.showMediaBlock, .new-corporate {
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1d3557;
+  }
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: #000000;
+  }
+}
+.career {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: #ffffff;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+  }
+}
+.our-exp {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 1.5vw;
+    color: #1d3557;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    color: #1d3557;
+  }
+}
 @media screen and (max-width: 1487px) {
   p {
     margin-top: 24px;
@@ -243,6 +294,50 @@ p {
       margin-top: 10px;
     }
   }
+  .media {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+    .p-sec {
+      margin-top: 10px;
+    }
+  }
+  .career {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 41px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 27px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    .p-sec {
+      margin-top: 10px;
+    }
+  }
 }
 @media screen and (max-width: 1024px) {
   .Managment-tain-text {
@@ -315,6 +410,73 @@ p {
       margin-top: -10px;
     }
   }
+  .media {
+    .line {
+      width: 157px;
+      margin-top: -15px;
+    }
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 25px;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 18px;
+      color: #ffffff;
+      margin-top: 14px;
+    }
+    .p-sec {
+      margin-top: -10px;
+    }
+  }
+  .career {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 3vw;
+      line-height: 1vw;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2vw;
+      line-height: 3vw;
+      color: #ffffff;
+      margin-top: 14px;
+    }
+    .p-sec {
+      margin-top: 10px;
+    }
+  }
+  .our-exp {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2.5vw;
+      line-height: 1.5vw;
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2vw;
+      line-height: 2vw;
+      color: #1d3557;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .Our-purpose {
@@ -361,6 +523,82 @@ p {
       margin-top: -10px;
     }
   }
+  .media {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 6vw;
+      line-height: 8vh;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 5vw;
+      line-height: 6vw;
+      color: #ffffff;
+    }
+  }
+  .career {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 5.5vw;
+      line-height: 3vh;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 4.5vw;
+      line-height: 4vw;
+      color: #ffffff;
+    }
+  }
+  .our-exp {
+        padding-top: 20px;
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 6vw;
+      line-height: 3vh;
+
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 4.5vw;
+      line-height: 4vw;
+      color: #1d3557;
+    }
+  }
+  .showMediaBlock, .new-corporate {
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1d3557;
+  }
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: #000000;
+  }
+}
 }
 @media screen and (max-width: 500px) {
   .mission {
@@ -379,6 +617,25 @@ p {
       font-weight: 300;
       font-size: 16px;
       line-height: 22px;
+      color: #ffffff;
+    }
+  }
+  .media {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
       color: #ffffff;
     }
   }

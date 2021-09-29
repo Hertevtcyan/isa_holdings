@@ -54,7 +54,6 @@
         <div class="my-butt">
           <ReadMoreButton type="text">Read More</ReadMoreButton>
         </div>
-        
       </div>
     </div>
   </div>
@@ -89,7 +88,7 @@ import TextRedLine from "../ui/TextRedLine";
 import { ref } from "vue";
 import PhotoSubTitleParagraphButt from "../ui/PhotoSubTitleParagraphButt";
 import Questions from "../../view/Questions";
-import ReadMoreButton from "@/components/ui/ReadMoreButton.vue"
+import ReadMoreButton from "@/components/ui/ReadMoreButton.vue";
 export default {
   components: {
     ReadMoreButton,
@@ -146,12 +145,13 @@ hr {
 .bl-1,
 .bl-2 {
   border: 1px solid;
-  width: 716px;
-  img{
+  width: 48%;
+  img {
     padding-bottom: 62px;
   }
 }
-.bl-1-text, .bl-2-text {
+.bl-1-text,
+.bl-2-text {
   max-width: 592px;
   margin-left: 62px;
 }
@@ -163,7 +163,7 @@ h2 {
   font-size: 45px;
   line-height: 53px;
   color: #1d3557;
-  padding-bottom: 24px
+  padding-bottom: 24px;
 }
 p {
   font-family: Rubik;
@@ -174,8 +174,126 @@ p {
   color: #1d3557;
   padding-bottom: 48px;
 }
-.my-butt{
+.my-butt {
   margin-left: calc(100% - 236px);
   padding-bottom: 42px;
 }
-</style>
+
+@media only screen and (max-width: 1488px) {
+  .bl-1,
+  .bl-2 {
+    img {
+      padding-bottom: 37px;
+    }
+    .bl-1-text,
+    .bl-2-text {
+      padding-right: 20px;
+    }
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 53px;
+      color: #1d3557;
+      padding-bottom: 24px;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 42px;
+      color: #1d3557;
+      padding-bottom: 48px;
+    }
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .my-butt {
+    padding-bottom: 20px;
+    margin-top: -33px;
+  }
+  .bl-1-text,
+  .bl-2-text {
+    margin-left: 23px;
+  }
+  .bl-1,
+  .bl-2 {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 37px;
+      line-height: 40px;
+      color: #1d3557;
+      padding-bottom: 24px;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 23px;
+      line-height: 33px;
+      color: #1d3557;
+      padding-bottom: 48px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .bl-1,
+  .bl-2 {
+    img {
+      padding-bottom: 32px;
+    }
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.05em;
+
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 38px;
+      color: #1d3557;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .my-cont {
+    flex-direction: column;
+  }
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6vw;
+    line-height: 7vw;
+    letter-spacing: 0.05em;
+
+    color: #1d3557;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.2vw;
+    line-height: 8vw;
+    color: #1d3557;
+  }
+  .bl-1,
+  .bl-2 {
+   width: 100%;
+  }
+   .bl-2 {
+   margin-top: 42px;
+  }
+}
+</style>    

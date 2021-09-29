@@ -2,7 +2,7 @@
   <div>
     <FirstFooter
       img="mission"
-      :button="false"
+      :button="true"
     />
   </div>
 </template>

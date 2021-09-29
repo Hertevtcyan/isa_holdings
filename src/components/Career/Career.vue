@@ -19,10 +19,10 @@
       </div>
     </div>
     <div class="emp-block container flex mx-auto justify-between">
-      <Emploees/>
+      <Emploees />
     </div>
     <div class="first-footer">
-      <FirstFooterCareer/>
+      <FirstFooterCareer />
     </div>
   </div>
 </template>
@@ -36,8 +36,8 @@ import JoinUsePhoto from "./CareerPageModules/JoinUsPhoto.vue";
 import JoinUseText from "./CareerPageModules/JoinUsText.vue";
 import ZaynHusseinPhoto from "./CareerPageModules/ZaynHusseinPhoto.vue";
 import ZaynHusseinText from "./CareerPageModules/ZaynHusseinText.vue";
-import Emploees from "./CareerPageModules/Emploees.vue"
-import FirstFooterCareer from './CareerPageModules/FirstFooterCareer.vue'
+import Emploees from "./CareerPageModules/Emploees.vue";
+import FirstFooterCareer from "./CareerPageModules/FirstFooterCareer.vue";
 export default {
   components: {
     CareerMainPhoto,
@@ -47,7 +47,7 @@ export default {
     ZaynHusseinPhoto,
     ZaynHusseinText,
     Emploees,
-    FirstFooterCareer
+    FirstFooterCareer,
   },
 };
 </script>
@@ -57,18 +57,22 @@ export default {
 .zayn {
   margin-top: 101px;
 }
-.emp-block{
+.emp-block {
   margin-top: 116px;
 }
-@media screen and (max-width: 767px){
-.my-container {
-  flex-direction: column-reverse;
+@media screen and (max-width: 1024px) {
+  .my-container {
+    margin-top: 50px;
+  }
 }
-.zayn {
-  flex-direction: column;
+@media screen and (max-width: 767px) {
+  .my-container {
+    flex-direction: column-reverse;
+  }
+  .zayn {
+    flex-direction: column;
+  }
 }
-}
-
 </style>
 
 

@@ -11,7 +11,7 @@
         financial goals.
       </p>
       <div class="butt">
- <ReadMoreButton class="ttr" type="read">See More</ReadMoreButton>
+ <ReadMoreButton templateStyle="media-manager" type="read">See More</ReadMoreButton>
       </div>
      
     </div>
@@ -61,14 +61,7 @@ export default {
   color: #ffffff;
   max-width: 466px;
 }
-.ttr {
-  font-family: Rubik !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 22px !important;
-  line-height: 26px !important;
-  color: #ffffff !important;
-}
+
 .line {
   width: 157px;
   height: 4px;
@@ -106,8 +99,10 @@ export default {
 @media only screen and (max-width: 1024px) {
   .block {
     padding-top: 20px;
+    margin-top: 65px;
   }
   .mobile {
+        
     h3 {
       font-family: Rubik;
       font-style: normal;
@@ -122,13 +117,14 @@ export default {
   }
 }
 @media only screen and (max-width: 767px) {
+  
   .block {
     background-image: url("../../../../assets/news/media/mobileSize.png");
     background-repeat: no-repeat;
 
     background-size: contain;
     width: 100%;
-    height: 700px;
+    height: 95vw;
     padding-top: 67px;
     margin-top: 50px
   }
@@ -139,23 +135,29 @@ export default {
     justify-content: center;
   }
   .mobile {
+    max-width: 112vw;
     h3 {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-      font-size: 28px;
+      font-size: 8vw;
       line-height: 40px;
       text-align: center;
       color: #ffffff;
     }
+    .line{
+      width: 100%;
+      margin-top: 3vw;
+    }
   }
   .find {
+    max-width: 112vw;
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 38px;
-    /* or 211% */
+    margin-top: 3vw;
 
     text-align: center;
   }

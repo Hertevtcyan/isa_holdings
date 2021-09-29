@@ -65,22 +65,45 @@ export default {
   right: 28px;
   top: 30px;
 }
+
 @media screen and (max-width: 1487px) {
   .media {
     width: 180px;
     height: 60px;
   }
+  .managment-btn{
+    width: 140px;
+    height: 40px;
+}
 }
 @media screen and (max-width: 1279px) {
   .history-vision {
     width: 180px;
     height: 60px;
   }
+  .media{
+    width: 140px;
+    height: 40px;
+  }
+  .media-manager {
+    width: 180px;
+    height: 60px;
+  }
+  
 }
 @media screen and (max-width: 1024px) {
   .history-vision {
     width: 140px;
     height: 40px;
   }
+  .mission{
+    width: 140px;
+    height: 40px;
+  }
+  .media-manager {
+    width: 140px;
+    height: 50px;
+  }
 }
+
 </style>

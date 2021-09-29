@@ -13,17 +13,19 @@
         items-center
       "
     >
-      <div :class="{active: showCorporateBlock}" class="corporate">
+      <div :class="{ active: showCorporateBlock }" class="corporate">
         <div class="btn" @click="showCorporate">
           <TextRedLine
+            componentStyle="new-corporate"
             subTitle="Corporate"
             paragraph="Browse through our images of activities throughout the Group"
           />
         </div>
       </div>
-      <div :class="{active: showMediaBlock}" class="media">
+      <div :class="{ active: showMediaBlock }" class="my-media">
         <div class="btn" @click="showMedia">
           <TextRedLine
+            componentStyle="showMediaBlock"
             subTitle="Media Kit"
             paragraph="Are you one of our partners? Download our official logo and corporate brand guidelines."
           />
@@ -38,7 +40,7 @@
       <div class="container mx-auto">
         <LastSlider />
       </div>
-      <FirstFooter/>
+      <FirstFooter />
     </div>
 
     <div v-if="showMediaBlock" class="media-downloads container mx-auto">
@@ -56,7 +58,7 @@ import FirstSlider from "./Corporate/FirstSLider.vue";
 import LastSlider from "./Corporate/LastSlider.vue";
 import DownloadBrands from "./MediaDownload/DownloadBrands.vue";
 import MobileManager from "./Corporate/MobileManager.vue";
-import FirstFooter from './Corporate/FirstFooter.vue'
+import FirstFooter from "./Corporate/FirstFooter.vue";
 export default {
   components: {
     NewsMediaMainPhoto,
@@ -65,7 +67,7 @@ export default {
     LastSlider,
     DownloadBrands,
     MobileManager,
-    FirstFooter
+    FirstFooter,
   },
   data() {
     return {
@@ -90,12 +92,12 @@ export default {
 
 <style scoped>
 .corporate,
-.media {
+.my-media {
   width: 626px;
   margin-top: 56px;
 }
 .btn {
-  max-width: 626px;
+  /* max-width: 626px; */
   cursor: pointer;
 }
 .active {
