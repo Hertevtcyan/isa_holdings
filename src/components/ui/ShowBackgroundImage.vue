@@ -131,7 +131,8 @@ p {
   .about-container__career,
   .about-container__media,
   .about-container__companyNews,
-  .about-container__history {
+  .about-container__history,
+  .about-container__OurCompanies  {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -158,7 +159,8 @@ p {
   .about-container__career,
   .about-container__media,
   .about-container__companyNews,
-  .about-container__history {
+  .about-container__history,
+  .about-container__OurCompanies  {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -188,7 +190,8 @@ p {
   .about-container__career,
   .about-container__media,
   .about-container__companyNews,
-  .about-container__history {
+  .about-container__history,
+  .about-container__OurCompanies  {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -213,7 +216,8 @@ p {
   .about-container__career,
   .about-container__media,
   .about-container__companyNews,
-  .about-container__history {
+  .about-container__history,
+  .about-container__OurCompanies  {
     h1 {
       font-family: Rubik;
       font-style: normal;

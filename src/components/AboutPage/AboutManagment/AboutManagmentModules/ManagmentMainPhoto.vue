@@ -5,18 +5,6 @@
       <div class="risk">Pass through</div>
     </div>
     <div>
-      <!-- <PhotoSubTitleParagraphButt
-        componentName="managment-apoarch"
-        sub-title="Helping a space business reach for the stars"
-        paragraph="We’ve financed a space electronics inventor to bring satellite technology to market."
-        :showButton="true"
-        :showPhoto="true"
-        :image="{
-          src: 'about/aboutManagment/helpingBusines.png',
-          alt: 'sdfsdfsdsdf',
-        }"
-      /> -->
-
       <div class="main-block">
         <img src="@/assets/about/aboutManagment/helpingBusines.png" alt="" />
         <div class="main-text">
@@ -85,10 +73,8 @@ export default {
   }
 }
 .ddd {
-  // width: 716px;
   .approach-risk {
     background: #ffffff;
-
     box-sizing: border-box;
     box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
     width: 411px;
@@ -236,6 +222,7 @@ export default {
   }
 }
 @media screen and (max-width: 767px) {
+  
   .managment-main-photo {
     width: 100%;
     flex-direction: column;

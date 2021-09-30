@@ -1,7 +1,8 @@
 <template>
-  <div class="container flex justify-between mx-auto ">
+  <div class="main-cont container flex justify-between mx-auto">
     <div class="my-container">
       <TextRedLine
+        componentStyle="our-brands"
         v-for="(data, index) in content"
         :key="index"
         v-bind="data"
@@ -44,5 +45,55 @@ export default {
   img {
     width: 100%;
   }
+}
+@media screen and (max-width: 1488px) {
+  .brands-photo {
+    width: 700px;
+  }
+  .my-container {
+    width: 545px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .brands-photo {
+    width: 538px;
+  }
+  .my-container {
+    margin-top: 0;
+    width: 445px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .brands-photo {
+    width: 325px;
+    height: 437px;
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      height: 437px;
+    }
+  }
+  .my-container {
+    
+    width: 409px;
+  }
+}
+@media screen and (max-width: 767px){
+.main-cont{
+  flex-direction: column-reverse;
+}
+.brands-photo {
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+  height: auto;
+  }
+}
+.my-container {
+      width: 100%;
+    margin-top: 25px;
+}
 }
 </style>

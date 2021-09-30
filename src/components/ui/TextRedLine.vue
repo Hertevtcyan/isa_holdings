@@ -219,10 +219,28 @@ p {
   h2 {
     font-family: Rubik;
     font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: #1d3557;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    color: #1d3557;
+  }
+}
+.history-first-footer {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
     font-weight: normal;
     font-size: 3vw;
     line-height: 2vw;
-    color: #1D3557;
+    color: #ffffff;
   }
   p {
     font-family: Rubik;
@@ -230,7 +248,7 @@ p {
     font-weight: 300;
     font-size: 1.9vw;
     line-height: 2vw;
-    color: #1D3557;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 1487px) {
@@ -244,15 +262,41 @@ p {
     padding-bottom: 24px;
     color: #1d3557;
   }
-  .history-first-footer {
-    p {
-      margin-top: 24px;
+
+  .itAllStarted {
+    h2 {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 28px;
-      padding-bottom: 24px;
+      font-size: 48px;
+      line-height: 55px;
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 27px;
+      line-height: 39px;
+      color: #1d3557;
+    }
+  }
+  .history-first-footer {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5vw;
+      line-height: 3vw;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.5vw;
+      line-height: 2.2vw;
+      color: #ffffff;
     }
   }
 }
@@ -267,17 +311,7 @@ p {
     padding-bottom: 24px;
     color: #1d3557;
   }
-  .history-first-footer {
-    p {
-      margin-top: 24px;
-      font-family: Rubik;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 20px;
-      padding-bottom: 24px;
-    }
-  }
+
   .Managment-tain-text {
     max-width: 500px;
   }
@@ -373,6 +407,17 @@ p {
     }
     .p-sec {
       margin-top: 10px;
+    }
+  }
+  .our-brands {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 46px;
+      color: #1d3557;
+      padding-bottom: 24px;
     }
   }
 }
@@ -533,42 +578,81 @@ p {
     }
   }
   .itAllStarted {
-  h2 {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3vw;
-    line-height: 2vw;
-    color: #1D3557;
-  }
-  p {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.9vw;
-    line-height: 2vw;
-    color: #1D3557;
-        margin-top: 9px;
-  }
-}
-}
-@media screen and (max-width: 925px){
-.itAllStarted {
     h2 {
       font-family: Rubik;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 32px;
-      line-height: 38px;
-      color: #1D3557;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      color: #1d3557;
     }
     p {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-     font-size: 18px;
-    line-height: 20px;
-      color: #1D3557;
+      font-size: 19px;
+      line-height: 26px;
+      color: #1d3557;
+    }
+  }
+  .slider-text {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 19px;
+      color: #1d3557;
+    }
+  }
+  .our-brands {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.05em;
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 38px;
+      color: #1d3557;
+    }
+  }
+}
+@media screen and (max-width: 925px) {
+  .itAllStarted {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      color: #1d3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 26px;
+      color: #1d3557;
     }
   }
 }
@@ -719,18 +803,56 @@ p {
       font-weight: normal;
       font-size: 32px;
       line-height: 38px;
-      color: #1D3557;
+      color: #1d3557;
     }
     p {
       font-family: Rubik;
       font-style: normal;
       font-weight: 300;
-     font-size: 22px;
-    line-height: 26px;
-      color: #1D3557;
+      font-size: 24px;
+      line-height: 26px;
+      color: #1d3557;
     }
   }
-  
+  .history-first-footer {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 6vw;
+      line-height: 8vh;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 3vw;
+      line-height: 4vw;
+      color: #ffffff;
+    }
+  }
+  .our-brands {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.05em;
+      color: #1d3557;
+    }
+    p {
+          font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1d3557;
+    margin-top: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -787,6 +909,25 @@ p {
       font-weight: 300;
       font-size: 24px;
       line-height: 28px;
+      color: #ffffff;
+    }
+  }
+  .history-first-footer {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 6vw;
+      line-height: 2vh;
+
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
       color: #ffffff;
     }
   }

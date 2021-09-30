@@ -28,20 +28,10 @@ components: {
 <style scoped lang="scss">
 .with-dream {
   max-width: 767px;
-  // height: 400px;
-  h2 {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 57px;
-  }
-  p {
-    margin-top: 52px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
+}
+@media screen and (max-width: 1488px){
+  .with-dream {
+    max-width: 656px;
   }
 }
 @media screen and (max-width: 1279px){

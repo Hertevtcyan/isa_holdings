@@ -40,13 +40,29 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 
 .carousel__pagination{
     display: none;
 }
-.slackSlider {
-  right: 50px!important;
+
+.carousel__prev{
+border-radius: 0;
+background: #148AAE;
+box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
+left: 50px;
+
+}
+.carousel__next{
+border-radius: 0;
+background: #148AAE;
+box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.15);
+right: 50px;
+}
+@media screen and (max-width: 767px){
+  .my-container{
+    width: 100%;
+  }
 }
 
 </style>

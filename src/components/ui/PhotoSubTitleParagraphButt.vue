@@ -53,7 +53,7 @@ export default {
     },
     PhotoTitle: {
       type: String,
-      required: false,
+      // required: false,
     },
     button: {
       type: Object,

@@ -128,25 +128,25 @@ export default {
 .corporate-container-bg__history {
   background-image: url("../../assets/about/aboutHistory/corporateMainPhoto.png");
   width: 100%;
-  height: 720px;
-  background-size: cover;
+  height: 37.2vw;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   z-index: -5;
   .my-block {
     .my-bg-color {
-      width: 1061px;
-      height: 720px;
+      width: 60vw;
+      height: 37.2vw;
       background: #1d3557;
       opacity: 0.35;
       box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
       position: absolute;
-      z-index: -3;
+      z-index: 1;
     }
     .my-container {
       .main-bg-text {
         width: 767px;
-
+        margin-top: 65px;
         .btnb {
           margin-left: 69%;
           margin-top: 70px;
@@ -259,8 +259,8 @@ export default {
 .explore-our {
   width: 36vw;
   height: 29vw;
-  background: #FFFFFF;
-box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
+  background: #ffffff;
+  box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
   padding: 30px 62px;
   margin-top: 20px;
 }
@@ -323,6 +323,29 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
       margin-left: calc(100% - 140px);
     }
   }
+  .corporate-container-bg__history {
+    .my-block {
+      .my-bg-color {
+        width: 60vw;
+        height: 37.2vw;
+        background: #1d3557;
+        opacity: 0.35;
+        box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+        position: absolute;
+        z-index: 1;
+      }
+      .my-container {
+        .main-bg-text {
+          width: 767px;
+          margin-top: 65px;
+          .btnb {
+            margin-left: 69%;
+            margin-top: 70px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1279px) {
   .corporate-container-bg__media {
@@ -373,6 +396,30 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
         z-index: 4;
         .main-bg-text {
           max-width: 477px;
+        }
+      }
+    }
+  }
+  .corporate-container-bg__history {
+    .my-block {
+      .my-bg-color {
+        width: 60vw;
+        height: 37.2vw;
+        background: #1d3557;
+        opacity: 0.35;
+        box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+        position: absolute;
+        z-index: 1;
+      }
+      .my-container {
+        z-index: 4;
+        .main-bg-text {
+          width: 600px;
+          padding-top: 30px;
+          .btnb {
+            margin-left: calc(100% - 180px);
+            margin-top: -10px;
+          }
         }
       }
     }
@@ -451,13 +498,33 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
     }
   }
   .explore-our {
-  // width: 36vw;
-  // height: 29vw;
-  // background: #ffffff;
-  // border: 1px solid;
-  padding: 10px 15px;
-  margin-top: 65px;
-}
+    padding: 10px 15px;
+    margin-top: 65px;
+  }
+  .corporate-container-bg__history {
+    .my-block {
+      .my-bg-color {
+        width: 60vw;
+        height: 37.2vw;
+        background: #1d3557;
+        opacity: 0.35;
+        box-shadow: 4px 4px 20px rgba(29, 53, 87, 0.1);
+        position: absolute;
+        z-index: 1;
+      }
+      .my-container {
+        .main-bg-text {
+          max-width: 355px;
+          margin-top: 10px;
+          // padding-top: 15px;
+          .btnb {
+            margin-left: calc(100% - 140px);
+            margin-top: -10px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .corporate-container-bg__mission {
@@ -473,7 +540,7 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
     background-position: center;
   }
   .corporate-container-bg__mission {
-        padding-left: 3vw;
+    padding-left: 3vw;
     padding-top: 20px;
     .my-block {
       .my-bg-color {
@@ -492,8 +559,7 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
     }
   }
   .corporate-container-bg__media {
-        padding-left: 4vw;
-
+    padding-left: 4vw;
     padding-top: 0;
     .my-block {
       .my-bg-color {
@@ -513,16 +579,14 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
     }
   }
   .corporate-container-bg__career {
-        padding-left: 2.5vw;
-        background-size: cover;
-    // background-position: center;
-
+    padding-left: 2.5vw;
+    background-size: cover;
     padding-top: 0;
     .my-block {
       .my-bg-color {
         width: 94%;
         height: 241px;
-            margin-top: -39px;
+        margin-top: -39px;
       }
       .my-container {
         flex-direction: column;
@@ -536,17 +600,46 @@ box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
       }
     }
   }
+
+  .corporate-container-bg__history {
+    padding-left: 4vw;
+    padding-top: 25px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    .my-block {
+      .my-bg-color {
+        width: 92%;
+        height: 461px;
+        margin-top: -5px;
+      }
+      .my-container {
+        width: 84vw;
+        max-width: 84vw;
+        .main-bg-text {
+          width: 84vw;
+          max-width: 84vw;
+          padding-left: 0;
+          margin-top: -24px;
+          .btnb {
+            left: 100px;
+          }
+        }
+      }
+    }
+  }
+
   .explore-our {
-  
-  background: #FFFFFF;
-box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
-  padding: 10px 15px;
-   margin-top: 65px;
+    background: #ffffff;
+    box-shadow: 4px 16px 20px rgba(29, 53, 87, 0.05);
+    padding: 10px 15px;
+    margin-top: 65px;
     width: 94%;
-     position: absolute;
-      bottom: -65px;
-       right: 3.5vw;
-        height: 277px;
-}
+    position: absolute;
+    bottom: -65px;
+    right: 3.5vw;
+    height: 277px;
+  }
 }
 </style>

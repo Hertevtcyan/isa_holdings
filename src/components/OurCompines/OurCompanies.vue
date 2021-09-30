@@ -4,7 +4,7 @@
     <div class="brands-block">
       <OurBrands />
     </div>
-    <div class="flex container items-center mx-auto">
+    <div class="cont-exp-our flex container items-center mx-auto">
       <ExploreOur />
     </div>
     <div v-if="showProductsPhoto" class="ttttte container flex mx-auto">
@@ -127,7 +127,7 @@ export default {
   methods: {
     showItem(val) {
       this.showItemParams = val.paragraph;
-      console.log(val.image,1);
+      console.log(val.image, 1);
       this.showItemPhotos = val.photos;
       console.log(this.showItemPhotos, 3434);
       this.showProductsPhoto = false;
@@ -150,5 +150,17 @@ export default {
 .brands-photo {
   width: 65%;
 }
-
+@media screen and (max-width: 1279px) {
+  .cont-exp-our {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ddd {
+    flex-direction: column;
+  }
+  .brands-photo {
+    width: 100%;
+  }
+}
 </style>

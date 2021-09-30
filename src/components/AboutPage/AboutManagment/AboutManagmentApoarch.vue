@@ -87,7 +87,7 @@ export default {
   }
   .f{
     flex-direction: column;
-    display: block
+    // display: block
   }
 }
 </style>

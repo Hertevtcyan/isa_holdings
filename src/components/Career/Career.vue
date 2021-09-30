@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <CareerMainPhoto />
     <IsaHolding />
     <div class="my-container container flex mx-auto justify-between">

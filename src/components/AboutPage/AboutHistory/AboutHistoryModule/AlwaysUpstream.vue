@@ -14,8 +14,8 @@
 <style scoped lang="scss">
 .container-upstream {
   background-image: url("../../../../assets/about/aboutHistory/Upstream.png");
-  width: 33vw;
-  height: 54.8vw;
+      width: 646px;
+    height: 1072px;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -50,16 +50,26 @@
     }
   }
 }
+@media screen and (max-width: 1488px) {
+  .container-upstream {
+    background-size: cover;
+    background-position: center;
+    width: 556px;
+     height: 922px
+  }
+}
 @media screen and (max-width: 1279px) {
   .container-upstream {
     background-size: cover;
     background-position: center;
+    width: 380px;
   }
 }
 @media screen and (max-width: 1024px) {
   .container-upstream {
-    width: 31vw;
-    height: 64vw;
+     max-width: 328px;
+     height: 614px;
+    
     .youtube-Icon-block {
     position: absolute;
     width: 90px;
@@ -73,6 +83,7 @@
 @media screen and (max-width: 767px) {
   .container-upstream {
     width: 100%;
+    max-width: 100%;
     .Alwys-container {
       position: absolute;
       top: 0;

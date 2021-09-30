@@ -45,6 +45,11 @@ export default {
 .Dream {
   margin-top: 82px;
 }
+@media screen and (max-width: 1488px) {
+  .Dream {
+        margin-top: 50px;
+  }
+}
 @media screen and (max-width: 1279px) {
   .upstream {
     margin-top: -85px;
