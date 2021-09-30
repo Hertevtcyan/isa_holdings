@@ -104,29 +104,11 @@ p {
       rgba(0, 0, 0, 0.55) 97.78%
     );
 
-    // mix-blend-mode: multiply;
-    // opacity: 0.55;
     width: 100%;
     height: 37.5vw;
   }
 }
-// .blue-history {
-//   background: #10223d;
-//   width: 100%;
-//   height: 41px;
 
-//   p {
-//     font-family: Rubik;
-//     font-size: 18px;
-//     color: $colorText;
-//     margin-right: 11px;
-//   }
-//   img {
-//     padding-right: 11px;
-//     //   widows: 13px;
-//     //   height: 13px;
-//   }
-// }
 .path-history {
   border: 13px solid transparent;
   border-left: 13px solid #c1121f;
@@ -148,7 +130,8 @@ p {
   .about-container__management,
   .about-container__career,
   .about-container__media,
-  .about-container__companyNews {
+  .about-container__companyNews,
+  .about-container__history {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -174,7 +157,8 @@ p {
   .about-container__management,
   .about-container__career,
   .about-container__media,
-  .about-container__companyNews {
+  .about-container__companyNews,
+  .about-container__history {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -203,7 +187,8 @@ p {
   .about-container__management,
   .about-container__career,
   .about-container__media,
-  .about-container__companyNews {
+  .about-container__companyNews,
+  .about-container__history {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -225,7 +210,10 @@ p {
   }
 }
 @media screen and (max-width: 451px) {
-  .about-container__career, .about-container__media,.about-container__companyNews {
+  .about-container__career,
+  .about-container__media,
+  .about-container__companyNews,
+  .about-container__history {
     h1 {
       font-family: Rubik;
       font-style: normal;
@@ -245,8 +233,8 @@ p {
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
     }
   }
-  .about-container__management{
-    p{
+  .about-container__management {
+    p {
       line-height: 20px;
     }
   }

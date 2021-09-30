@@ -89,6 +89,10 @@ export default {
     width: 180px;
     height: 60px;
   }
+  .building-first{
+    width: 140px;
+    height: 40px;
+  }
   
 }
 @media screen and (max-width: 1024px) {
@@ -104,6 +108,16 @@ export default {
     width: 140px;
     height: 50px;
   }
+  .aug-block{
+     width: 140px;
+    height: 50px;
+  }
+  .aug-block  .line{
+      right: 7px;
+    top: 25px;
+    }
+    
+  
 }
 
 </style>

@@ -142,7 +142,8 @@ p {
     color: #ffffff;
   }
 }
-.showMediaBlock, .new-corporate {
+.showMediaBlock,
+.new-corporate {
   p {
     font-family: Rubik;
     font-style: normal;
@@ -194,6 +195,42 @@ p {
     font-size: 1.3vw;
     line-height: 2vw;
     color: #1d3557;
+  }
+}
+.building-first {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 2vw;
+    color: #ffffff;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9vw;
+    line-height: 2vw;
+    color: #ffffff;
+  }
+}
+.itAllStarted {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 2vw;
+    color: #1D3557;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9vw;
+    line-height: 2vw;
+    color: #1D3557;
   }
 }
 @media screen and (max-width: 1487px) {
@@ -477,6 +514,63 @@ p {
       color: #1d3557;
     }
   }
+  .building-first {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3vw;
+      line-height: 2vw;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.9vw;
+      line-height: 2vw;
+      color: #ffffff;
+    }
+  }
+  .itAllStarted {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 2vw;
+    color: #1D3557;
+  }
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9vw;
+    line-height: 2vw;
+    color: #1D3557;
+        margin-top: 9px;
+  }
+}
+}
+@media screen and (max-width: 925px){
+.itAllStarted {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 38px;
+      color: #1D3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+     font-size: 18px;
+    line-height: 20px;
+      color: #1D3557;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .Our-purpose {
@@ -562,7 +656,7 @@ p {
     }
   }
   .our-exp {
-        padding-top: 20px;
+    padding-top: 20px;
     h2 {
       font-family: Rubik;
       font-style: normal;
@@ -581,25 +675,64 @@ p {
       color: #1d3557;
     }
   }
-  .showMediaBlock, .new-corporate {
-  p {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    color: #1d3557;
+  .showMediaBlock,
+  .new-corporate {
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      color: #1d3557;
+    }
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 57px;
+      color: #000000;
+    }
   }
-  h2 {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 57px;
-    color: #000000;
+  .building-first {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 6vw;
+      line-height: 9vw;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 5vw;
+      line-height: 5vw;
+      color: #ffffff;
+    }
   }
+  .itAllStarted {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 38px;
+      color: #1D3557;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+     font-size: 22px;
+    line-height: 26px;
+      color: #1D3557;
+    }
+  }
+  
 }
-}
+
 @media screen and (max-width: 500px) {
   .mission {
     h2 {
@@ -636,6 +769,24 @@ p {
       font-weight: 300;
       font-size: 24px;
       line-height: 30px;
+      color: #ffffff;
+    }
+  }
+  .building-first {
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
       color: #ffffff;
     }
   }

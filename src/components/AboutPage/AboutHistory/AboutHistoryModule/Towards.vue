@@ -23,40 +23,43 @@
 
 <style scoped lang="scss">
 .container-bg {
-
   padding-bottom: 136px;
-}
-.towards-text {
-padding-left: 70px;
-  max-width: 626px;
-  height: 400px;
-  margin-top: 82px;
-  h2 {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 57px;
-    color: #1d3557;
-    padding-bottom: 24px;
+  .toward-photo{
+    width: 767px;
   }
-  .line {
-    width: 157px;
-    height: 4px;
-    background: #c1121f;
-  }
-  .p-span-color {
+  .towards-text {
+    padding-left: 70px;
+    max-width: 626px;
+    height: 400px;
+    margin-top: 82px;
+    h2 {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 57px;
+      color: #1d3557;
+      padding-bottom: 24px;
+    }
+    .line {
+      width: 157px;
+      height: 4px;
+      background: #c1121f;
+    }
+    .p-span-color {
       margin-top: 24px;
-      p{
-          line-height: 75px;
-          font-size: 28px;
-          color: #1D3557;
-          font-family: Rubik;
-font-style: normal;
-font-weight: 300;
+      p {
+        line-height: 75px;
+        font-size: 28px;
+        color: #1d3557;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
       }
+    }
   }
 }
+
 .p-color {
   color: #c1121f;
   font-family: Rubik;
@@ -64,5 +67,23 @@ font-weight: 300;
   font-weight: 300;
   font-size: 28px;
   line-height: 42px;
+}
+@media screen and (max-width: 1488px) {
+  .container-bg {
+    margin-top: 80px;
+    .towards-container {
+      .towards-text {
+        margin-top: 0;
+        .p-span-color {
+          p {
+            line-height: 66px;
+          }
+        }
+      }
+      .toward-photo {
+        min-width: 574px;
+      }
+    }
+  }
 }
 </style>
